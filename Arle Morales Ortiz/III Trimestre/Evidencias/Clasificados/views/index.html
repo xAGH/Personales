@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+        <div class="cuadricula">
+            {% if largor > 0 and estado == True %}
+                <h2>CLASIFICADOS DESTACADOS</h2>
+            {% else %}
+                <h2>EN ESTE MOMENTO NO HAY CLASIFICADOS, PUEDES <a class="a-inexistentes" href="{{url_for('subir_clasificado')}}">AÑADIR UNO.</a></h2>
+            {% endif %}
+
+            {% for i in range(largor) %}
+                {% if data[i][4] == '1'%}
+                <div class="cuadro">
+                    <div class="titulo-cuadro">
+                        <h2>{{ data[i][1] }}</h2>
+                    </div>
+                    <div class="img">
+                        <img src="../static/images/{{data[i][5]}}">
+                    </div>
+                    <div class="descripcion">
+                        <p class="texto">
+                            {{ data[i][2] }}
+                        <p class="enlace">
+                            {% if admin == True%}
+                                <a onclick="location.reload();" class="disable" href="http://127.0.0.1:8000/admin?product={{data[i][0]}}">Desabilitar</a>
+                            {% else %}
+                                <a href="http://127.0.0.1:8000/?i={{data[i][6]}}">Contactar</a>
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+{% endblock %}

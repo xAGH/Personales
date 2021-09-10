@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block head %}
+
+<body> 
+
+    Introduzca los números a smultiplicar:
+    <form method="POST" action="/multiplicar">
+        <input type="text" name="numero1">
+        <input type="text" name="numero2">
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
+
+{% endblock %}
+

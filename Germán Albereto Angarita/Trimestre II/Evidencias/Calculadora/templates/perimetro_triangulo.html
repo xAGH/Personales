@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block head %}
+
+<body> 
+
+    <p>Introduzca la medida de los lados del triángulo en cm: </p>
+    <form method="POST" action="/perimetro_triangulo">
+        <input type="text" name="alto" placeholder="Alto: ">
+        <input type="text" name="base" placeholder="Base: ">
+        <input type="submit" value="Perímetro">
+    </form>
+
+</body>
+</html>
+
+{% endblock %}

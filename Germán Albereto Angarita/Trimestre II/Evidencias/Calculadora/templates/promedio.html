@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block head %}
+
+<body> 
+
+    <p>Introduzca los números a los que se les calculará el promedios separado por comas:</p>
+    <form method="POST" action="/promedio">
+        <input type="text" name="numeros" placeholder="Ejemplo: 1,2,3,4,5">
+        <input type="submit" value="Promediar">
+    </form>
+
+</body>
+</html>
+
+{% endblock %}

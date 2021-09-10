@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block head %}
+
+<body> 
+
+    <p>Introduzca la medida de la lado del cubo en cm: </p>
+    <form method="POST" action="/volumen_cubo">
+        <input type="text" name="lado" placeholder="Radio: ">
+        <input type="submit" value="Volumen">
+    </form>
+
+</body>
+</html>
+
+{% endblock %}

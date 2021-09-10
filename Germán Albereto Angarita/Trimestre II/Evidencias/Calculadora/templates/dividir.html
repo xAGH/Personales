@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block head %}
+
+<body> 
+    <p>Introduzca los números a dividir:</p>
+    <form method="POST" action="/dividir">
+        <input type="text" name="numero1" placeholder="Numéro a dividir">
+        <input type="text" name="numero2" placeholder="Divisor">
+        <input type="submit" value="Dividir">
+    </form>
+
+</body>
+</html>
+
+{% endblock %}
+
+

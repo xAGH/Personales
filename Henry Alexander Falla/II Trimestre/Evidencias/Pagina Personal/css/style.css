@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@500&display=swap');
+body{
+    background-color: #242424;
+    font-family: 'KoHo', sans-serif;
+}
+
+.main{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+    height: 400px;
+}
+
+.links p{
+    margin-left: 2%;
+}
+.links{
+    margin:0px auto;
+    height: auto;
+}
+
+.welcome{
+    text-decoration: none;
+    font-size: 120px;
+    color: rgb(236, 236, 236);
+}
+
+.text{
+    margin-top: 3%;
+    width: 100%;
+    font-size: 40px;
+    color: #6d6d6d;
+    text-align: justify;
+}
+
+.text_hoja{
+    margin-top: 3%;
+    width: 100%;
+    font-size: 40px;
+    color: #6d6d6d;
+    text-align: justify;
+    text-align: center;
+}
+
+.enlaces{
+    text-decoration: none;
+    color: #9FA6A5;
+}
+
+img{
+    height: 200px;
+}
+
+.img_rigth{
+    float: right;
+    margin-right: 20%;
+    filter: blur(2px);
+    margin-bottom: 2%;
+}
+
+.img_rigth:hover{
+    filter: none;
+}
+
+.img_left{
+    float: left;
+    margin-left: 20%;
+    filter: blur(2px);
+    margin-bottom: 2%;
+}
+
+.img_left:hover{
+    filter: none;
+}
+
+/* Barra de navegación */
+.menu ul{
+    list-style:none;
+    margin:0px;
+    padding:0px;   
+}
+.menu li{
+    padding: 1%;
+}
+.menu .item a{
+    color:#9FA6A5;
+    font-size:18px ;
+    text-decoration:none;
+    position: fixed;
+}
+.menu .item a:hover{
+    color:rgb(218, 218, 218);
+}
+.menu .principal a{
+    color:#d6d6d6;
+    font-size:22px ;
+    text-decoration:none;
+    position: fixed;
+}
+.menu .principal a:hover{
+    color:white;
+}
+
+.menu2 ul{
+    list-style:none;
+    margin:0px;
+    padding:0px;   
+}
+.menu2 li{
+    padding: 1%;
+}
+.menu2 .item a{
+    color:#9FA6A5;
+    font-size:22px ;
+    text-decoration:none;
+    position: fixed;
+}
+.menu2 .item a:hover{
+    color:rgb(218, 218, 218);
+}
+.menu2 .principal a{
+    color:#d6d6d6;
+    font-size:26px ;
+    text-decoration:none;
+    position: fixed;
+}
+.menu2 .principal a:hover{
+    color:white;
+}
+
+.menu3 ul{
+    list-style:none;
+    margin:0px;
+    padding:0px;   
+}
+.menu3 li{
+    padding: 1%;
+}
+.menu3 .item a{
+    color:#9FA6A5;
+    font-size:26px ;
+    text-decoration:none;
+    position: fixed;
+}
+.menu3 .item a:hover{
+    color:rgb(218, 218, 218);
+}
+.menu3 .principal a{
+    color:#d6d6d6;
+    font-size:30px ;
+    text-decoration:none;
+    position: fixed;
+}
+.menu3 .principal a:hover{
+    color:white;
+}
+.sobre_mi{
+    margin: 0PX auto;
+    height: auto;
+    padding-top: 90px;
+}
+
+.articulo1{
+    width: 70%;
+    font-size: 30px;
+    color: #6d6d6d;
+    text-align: justify;
+}
+
+.articulo2{
+    position: relative;
+    margin-top: 10%;
+    left: 425px;
+    width: 70%;
+    font-size: 30px;
+    color: #6d6d6d;
+    text-align: justify;
+}
+
+.articulo3{
+    position: relative;
+    margin-top: 10%;
+    width: 100%;
+    font-size: 30px;
+    color: #6d6d6d;
+    text-align: justify;
+    bottom: 350px;
+}
+
+.articulo4{
+    position: relative;
+    width: 100%;
+    font-size: 30px;
+    color: #6d6d6d;
+    text-align: justify;
+    bottom: 250px;
+}
+
+.img_graduacion{
+    float: right;
+    position: relative;
+    bottom:450PX;
+    height: 450px;
+    clear: both;
+}
+
+.img_kebab{
+    float: left;
+    position: relative;
+    height: 250px;
+    bottom: 460px;
+    clear: both;
+}
+
+.img_hobbies{
+    height: 400px;
+    bottom: 460px;
+    clear: both;
+    position: relative;
+    bottom: 300px;
+}
+
+.img_gracias{
+    height: 200px;
+    clear: both;
+    position: relative;
+    bottom: 300px;
+    padding: 50px;
+}
+
+.copy{
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size:20px;
+    margin: 50px;
+    padding: 50px;
+}
+
+.hdv{
+    height: 1300px;
+}
+
+.clear{
+    clear: both;
+}

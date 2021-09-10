@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    --color:#1494d4;
+}
+
+nav, .subscribete_form{
+    display:flex;
+    height: 10vh;
+    background-color: #242c2c;
+}
+
+.texto_navbar{
+    width:50%;
+    margin:auto;
+    cursor:default;
+    margin-left:9%;
+    font-size: 25px;
+    font-weight:900;
+}
+
+.menu{
+    width:50%;
+    margin:auto;
+    margin-left:25%;
+}
+
+.lista li{
+    display:inline;
+    list-style: none;
+    padding:0 15px 0px 15px;
+    font-size: 15px;
+}
+
+.lista li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.lista li a:hover{
+    color:var(--color);
+}
+
+.multimedia{
+    color:var(--color);
+    font-style: none;
+    text-decoration:none;
+    cursor:default;
+    font-weight:900;
+}
+
+hr{
+    height:5px;
+    background-color:var(--color);
+    border-color:var(--color);
+}
+
+
+.texto_cabecera{
+    background: url(../images/cabecera.jpg) no-repeat -0px -80px;
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h2_cabecera{
+    font-size: 80px;
+    color: #fff;
+}
+
+.p_cabecera{
+    font-size: 25px;
+    width: 70%;
+    text-align: center;
+    color: #fff;
+}
+
+.subscribete{
+    width:50%;
+    margin:auto;
+    margin-left:7%;
+    font-size: 25px;
+    font-weight:700;
+    color: #fff;
+}
+
+.formulario input[type="email"]{
+    padding: 7px 90px 7px 4px;
+    margin: auto;
+}
+
+.formulario{
+    justify-content: center;
+    margin: auto;
+}
+
+.formulario input[type="submit"]{
+    padding: 8px 20px 8px 20px;
+    margin: auto;
+    background-color: #f04c1c;
+    border: none;
+    color: #fff;
+}
+
+.tarjetas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta{
+    width: 18%;
+    margin:1.5% 4% 0 4%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.tarjeta img{
+    width: 35%;
+}
+
+.titulo_tarjeta{
+    font-weight: 900;
+    font-size: 18px;
+    margin: 10px 0px 10px 0px;
+}
+
+footer{
+    text-align: center;
+    padding:1.5% 0 1.5% 0;
+    background-color: var(--color);
+    color: #fff;
+    margin-top: 4%;
+}
+
+.lista li a.actual_link{
+    color:var(--color);
+}
+
+.contenido{
+    display: flex;
+    width: 100vw;
+}
+
+.left{
+    margin-left: 10%;
+}
+
+.right{
+    margin-right: 10%;
+}
+
+.nosotros, .descripcion_nosotros, .img_nosotros{
+    width: 80%;
+}
+
+.nosotros, .descripcion_nosotros, .que_hacemos, .servicios{
+    font-size:20px;
+    text-align: justify;
+}
+
+.nosotros{
+    margin:2% 0 4% 0;
+}
+
+.nosotros h2, .que_hacemos h2{
+    font-size:25px;
+}
+
+.que_hacemos{
+    margin-top: 10%;
+    background-color:#35424a;
+    padding:8% 6% 8% 4%;
+    color: #fff;
+}
+
+.descripcion_nosotros{
+    margin: 2% 0 2% 0;
+    background-color:#35424a;
+    padding:2%;
+    color: #fff;
+}
+
+.title_servicios, .tarjeta_servicios h2{
+    font-size: 25px;
+}
+
+.tarjeta_servicios{
+    background-color:#e6e6e6;
+    padding:6% 10% 4.5% 4%;
+    margin:4px;
+}
+
+.servicios{
+    margin-top: 2%;
+    width:auto;
+}
+
+.right_servicios{
+    margin-right: 10%;
+    width:30%;
+    margin-left:8%;
+}
+
+.contacto, .form_contacto{
+    width: 80%;
+}
+
+.mapa{
+    width:60%;
+}
+
+.right_contacto{
+    width:50%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left_contacto{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.que_hacemos_contacto{
+    margin-top: 10%;
+    background-color:#35424a;
+    padding:8% 6% 8% 4%;
+    color: #fff;
+    width: 60%;
+    text-align: justify;
+}
+
+.form_contacto{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    margin-left:13%;
+}
+
+.form_contacto h2{
+    font-size:25px;
+    padding-bottom: 1%;
+}
+
+.form_contacto label{
+    font-size: 18;
+}
+
+
+.form_contacto input, textarea{
+    text-align: left;
+    font-size:16px;
+    width: 80%;
+    padding: 0.6% 0.6% 0.6% 0;
+    margin-bottom: 0.5%;
+    outline: none;
+    resize: none;
+}
+
+textarea{
+    height: 21.3vh;
+}
+
+.form_contacto input[type="submit"]{
+    background-color: #f04c1c;
+    border: 1px solid black;
+    color: #fff;
+    text-align: center;
+}
+
+.texto_contacto{
+    font-size:24px;
+}
+

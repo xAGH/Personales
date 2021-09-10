@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.galeria{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 90vh;
+    width:35vw;
+    gap: 1.5rem 1.5rem;
+    grid-template-areas:"imagen1 imagen2 imagen3"
+                        "imagen1 imagen4 imagen4"
+                        "imagen5 imagen5 imagen6"
+                        "imagen7 imagen8 imagen9";
+}
+
+.imagen1{       
+    grid-row-start:imagen1;
+    grid-row-end:imagen1;
+}
+
+.imagen4{
+    grid-column-start:imagen4;
+    grid-column-end:imagen4;
+}
+
+.imagen5{
+    grid-column-start:imagen5;
+    grid-column-end:imagen5;
+}
+
+.imagen{
+    background-color: rgb(255,77,77)
+}

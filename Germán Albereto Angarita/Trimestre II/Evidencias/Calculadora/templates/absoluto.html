@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block head %}
+
+<body> 
+
+    <p>Introduzca el número para convertirlo a valor absoluto:</p>
+    <form method="POST" action="/absoluto">
+        <input type="text" name="numero" placeholder="Número para valor absoluto">
+        <input type="submit" value="Valor Absoluto">
+    </form>
+
+</body>
+</html>
+
+{% endblock %}

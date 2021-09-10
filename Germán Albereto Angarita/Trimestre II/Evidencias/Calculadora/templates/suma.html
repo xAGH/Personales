@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block head %}
+
+<body> 
+    Introduzca los números a sumar:
+    <form method="POST" action="/suma">
+        <input type="text" name="numero1">
+        <input type="text" name="numero2">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+{% endblock %}
+

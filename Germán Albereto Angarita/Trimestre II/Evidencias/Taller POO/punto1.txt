@@ -1,0 +1,18 @@
+1.Defina con sus propias palabras
+
+a) Clase:
+    Una clase en POO se puede tomar como un objeto o como un molde de un objeto de la vida real, el cual, como en la realidad, tiene aspectos específicos o propiedades y funcionalidades o métodos los cuales son acciones que puede realizar dicho objeto.
+
+b) Instancia:
+    Una instancia es un ejemplo, un modelo u objeto resultante de la clase base el cual hereda atributos y métodos de ésta. Por ejemplo, la clase casa tiene como métodos Habitable y Resistente, y como atributos un color, metros cuadrados, número de pisos y habitaciones de habitantes. Al instanciar un objeto CasaDeAlejo de esta clase, podemos decir que CasaDeAlejo cuenta con los mismos métodos que la clase casa, además de tener otro nuevo el cual es almacenar, ya que ésta tiene garaje y en cuanto a sus atributos, su color es blanco, sus metros cuadrados son 100, su número de pisos son 2 y sus habitaciones son 3.
+
+c) Atributo(propiedad):
+    Característica específica de una clase que define sus peculiaridades o sus cualidades. Ejemplo: 
+    Atributos de un lápiz: Color, largor, tipo de mina, tipo de goma, marca, etc.
+
+d) Método:
+    Funcionalidad o acción con la que cuenta la clase, ejemplo:
+    Métodos de un lápiz genérico: pintar, borrar. 
+
+e) Constructor:
+    Es un método el cual permite definir las características inciales de un objeto al ser instanciado, inicializado o especificado.

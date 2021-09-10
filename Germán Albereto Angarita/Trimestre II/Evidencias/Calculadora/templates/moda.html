@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block head %}
+
+<body> 
+
+    <p>Introduzca los números a los que se les calculará la moda separados por coma:</p>
+    <form method="POST" action="/moda">
+        <input type="text" name="numeros" placeholder="ejemplo: 1,2,3,4,5">
+        <input type="submit" value="Moda">
+    </form>
+
+</body>
+</html>
+
+{% endblock %}

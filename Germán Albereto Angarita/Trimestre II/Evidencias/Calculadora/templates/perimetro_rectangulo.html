@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block head %}
+
+<body> 
+
+    <p>Introduzca la medida de los lados del rectángulo en cm: </p>
+    <form method="POST" action="/perimetro_rectangulo">
+        <input type="text" name="alto" placeholder="Alto: ">
+        <input type="text" name="largo" placeholder="Ancho: ">
+        <input type="submit" value="Perímetro">
+    </form>
+
+</body>
+</html>
+
+{% endblock %}

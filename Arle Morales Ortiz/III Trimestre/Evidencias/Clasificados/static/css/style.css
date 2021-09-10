@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+:root{
+    --color:rgb(243, 220, 12);
+}
+
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(230, 230, 230)
+}
+header{
+    width:100%;
+    height:200px;
+    text-align: center;
+    font-size: 10px;
+    color:rgb(39, 35, 35);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: var(--color);
+    font-family: 'Times New Roman', Times, serif,Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+}
+.title{
+    margin-top:1%;
+}
+a{
+    font-size:15px;
+    font-weight:bold;
+}
+form{
+    margin-top:1%;
+    margin-bottom:1%;
+}
+
+.btn{
+    padding:1%;
+    border:2px solid #00000080;
+    background-color:var(--color);
+    color:#00000080;
+    outline: none !important;
+}
+
+.btn:focus{
+    border:2px solid #ffffff;
+}
+
+.search{
+    width: 15%;
+    background-color: white;
+}
+
+.search:focus{
+    border:2px solid #000;
+}
+
+.buscar{
+    background-color:rgb(168, 168, 168);
+    color: white;
+}
+
+.subir{
+    color:#00000080;
+    text-decoration:none;
+    height: 100%;
+    width:100%;
+}
+
+.pag-principal{
+    padding:1%;
+    margin-top:1%;
+    margin-bottom:1%!important;
+    border:2px solid #00000080;
+    background-color:var(--color);
+    color:#00000080;
+    cursor:pointer;
+    outline: none !important;
+    display:block!important;
+    margin:auto;
+    width:170px;
+    text-decoration:none;
+}
+.pag-principal:hover{
+    border:2px solid #ffffff!important;
+}
+.btn:hover{
+    border:2px solid #ffffff!important;
+}
+h1{
+    font-size: 27px;
+    color:#5e5e5e;
+    text-shadow:0px 0px 1px #00000080;
+}
+h2{
+    font-size: 18px;
+}
+.cuadricula{
+    height: auto;
+    font-size: 13px;
+    text-align: center;
+    padding: 1vw;
+    padding-top: 5%;   
+    padding-bottom: 1%; 
+}
+.cuadro{
+    display:inline-block;
+    width:35%;
+    margin:2%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color:var(--color);
+    border:1px solid black;
+}
+.titulo-cuadro{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100px;
+    background-color:var(--color);
+}
+.descripcion{
+    position:relative!important;
+    width:100%;
+    height:120px;
+    background-color:var(--color);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.descripcion .texto{
+    position:relative!important;
+    display:block!important;
+    width:90%;
+    height:60px;
+    overflow:auto;
+    padding:1%;
+    margin:auto;
+}
+.descripcion .enlace{
+    width:100%;
+    height:50px;
+}
+.descripcion .enlace a{
+    border:2px solid #00000080;
+    background-color:var(--color);
+    color:#00000080;
+    cursor:pointer;
+    outline: none !important;
+    display:block!important;
+    margin:auto;
+    width:170px;
+    padding:1%;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+.descripcion .enlace a:hover{
+    border:2px solid #ffffff;
+}
+.cuadro h2{
+    padding:1%;
+    text-transform:uppercase;
+    color:#5e5e5e;
+    text-shadow:0px 0px 1px #00000080;
+}
+.cuadro img{
+   display:block;
+   margin:auto;
+   width:100%;
+   height:300px;
+   object-fit:cover!important;
+   cursor:pointer;
+}
+.cuadro img:hover{
+    box-shadow:3px 3px 3px black;
+}
+
+
+@media (max-width: 1000px) {
+    .cuadro{
+        width:80%;
+        margin:auto!important;
+        margin-bottom:5%!important;
+    }
+    .cuadro img{
+       height:400px;
+    }
+
+    .form-subir-clasificado h2{
+        font-size:1em;
+        padding:6%;
+        text-decoration: underline;
+    }
+}
+@media (max-width: 500px) {
+   .descripcion{
+        display:block!important;
+    }
+    .cuadro img{
+       display:block;
+       margin:auto;
+       width:100%;
+       height:auto!important;
+       object-fit:cover!important;
+    }
+
+    .form-subir-clasificado h2{
+        font-size:0.5em;
+        padding:6%;
+        text-decoration: underline;
+    }
+}
+
+.formulario-subida{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-subir-clasificado{
+    width: 30%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:1%;
+}
+
+.form-subir-clasificado h2{
+    font-size:2em;
+    padding:6%;
+    text-decoration: underline;
+}
+
+.input-subida, textarea{
+    max-height:30px;
+    min-height:30px;
+    padding: 1.5%;
+    border:2px solid var(--color);
+    color:#00000080;
+    outline: none !important;
+    max-width:60%;
+    min-width:60%;
+    margin:1.5%;
+}
+
+#preview img{
+    max-height:200px;
+}
+
+.a-inexistentes{
+    font-size: 1em;
+    color: rgb(93, 93, 246);
+    text-decoration: none;
+}
+
+.publicar{
+    padding: 2%;
+}
+
+.publicar:hover{
+    padding: 2.5%;
+}
+
+.msg-error{
+    height: 74.6vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.msg-error h2{
+    font-size:3em;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    width: 50%;
+    color: red;
+    text-align: center;
+}
+
+.datos{
+    display:flex;
+    flex-direction: column;
+}
+
+.disable{
+    background-color:rgb(255, 94, 94)!important;
+}
