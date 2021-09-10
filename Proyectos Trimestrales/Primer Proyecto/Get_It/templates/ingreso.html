@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+  {% if usuario %}
+
+    <script>
+    alert('El email no se encuentra registrado.');
+    window.location = '{{url_for("interfaz_login")}}'
+    </script>
+    
+
+  {% elif clave %}
+
+    <script>
+    alert('La contraseña no es correcta.');
+    window.location = '{{url_for("interfaz_login")}}'
+    </script>
+
+  {% endif %}
+
+  <div class="container">
+      
+    <form id="signup" action="{{url_for('login')}}" method="POST">
+      
+      <div class="header">
+
+        <h3>INGRESO</h3>
+
+      </div>
+
+        <div class="sep"></div>
+
+          <div class="inputs">
+
+              <input type="text" placeholder="Correo" name="usuario" size="40">
+              <input type="password" placeholder="Contraseña" name="contrasena">
+              
+                <input type="submit" value="Entrar">
+                <input type="reset" value="Borrar">
+          </div>
+              <div>¿No estas   registrado? <a href="{{url_for('interfaz_registro')}}">REGISTRATE</a></div>
+      
+    </form> 
+  </div>
+{% endblock %}
