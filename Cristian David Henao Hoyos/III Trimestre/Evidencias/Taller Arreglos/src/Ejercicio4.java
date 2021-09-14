@@ -53,8 +53,4 @@ public class Ejercicio4 {
         }
         return cantidad;
     }
-
-    public static double[] numerosRepetidos(double[] numeros){
-
-    }
 }
