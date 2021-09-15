@@ -1,4 +1,4 @@
-from flask import Flask, url_for, redirect, request
+from flask import Flask
 from controllers import logic_routes as control
 
 

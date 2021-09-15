@@ -8,7 +8,7 @@ class Clasificados():
             """Método constructor que inicializa la configuración necesaria para conectar a la base de datos."""
             self.config = {
                 'user': "root",
-                'password': "Sena1234",
+                'password': "alejo23001",
                 'host': 'localhost',
                 'database': "clasificados",
                 'raise_on_warnings': True
@@ -25,17 +25,20 @@ class Clasificados():
             SELECT * FROM producto;
             """)
             data = cursor.fetchall()
-            db.close()
             return data
 
         except:
             return 400
+
+        finally:
+            db.close()
 
     def get_user_data(self, documento):
         db = sql.connect(**self.config)
         cursor = db.cursor()
         cursor.execute(f"SELECT * FROM propietario WHERE documento = {documento}")
         resultado = cursor.fetchall()
+        db.close()
         return resultado
     
     def add_clasificados(self, nombrepro, descripcion, nombrefoto, documento):
