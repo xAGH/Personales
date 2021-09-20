@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login{
+    background-color: rgb(14, 76, 117);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5vh 20vh 25vh 25vh 20vh 5vh;
+    grid-template-areas: "lateral arriba lateral2"
+                         "lateral principal lateral2"
+                         "lateral principal lateral2"
+                         "lateral principal lateral2"
+                         "lateral principal lateral2"
+                         "lateral abajo lateral2";
+}
+
+.registro{
+    background-color: rgb(14, 76, 117);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10vh 3vh 10vh 20vh 25vh 20vh 10vh 3vh 10vh;
+    grid-template-areas: "lateral arriba lateral2"
+                         "lateral principal lateral2"
+                         "lateral principal lateral2"
+                         "lateral principal lateral2"
+                         "lateral principal lateral2"
+                         "lateral principal lateral2"
+                         "lateral principal lateral2"
+                         "lateral principal lateral2"
+                         "lateral abajo lateral2";
+}
+
+.principal{
+    grid-area: principal;
+    background-color: rgb(50, 130, 181);
+    border: 5px solid rgb(7, 60, 105);
+    box-shadow: 0 0 180px rgb(5, 47, 73);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+}
+
+h2{
+    font-size: 35px;
+    color: white;
+}
+
+form{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inputs{
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 8px;
+    border:none;
+    box-shadow: 0 0 180px rgb(5, 47, 73);
+}
+
+button{
+    border-radius: 8px;
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    color: rgb(7, 60, 105);
+    border:none;
+    box-shadow: 0 0 180px rgb(5, 47, 73);
+}
+
+button:hover{
+    border: 1px solid white;
+    background-color: rgb(5, 47, 73);
+    color: white;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: white;  
+}
+
+a:hover{
+    color: darkblue;
+}
+
+.lateral{
+    grid-area: lateral;
+}
+
+.lateral2{
+    grid-area: lateral2;
+}
+
+.arriba{
+    grid-area: arriba;
+}
+
+.abajo{
+    grid-area: abajo;
+}
