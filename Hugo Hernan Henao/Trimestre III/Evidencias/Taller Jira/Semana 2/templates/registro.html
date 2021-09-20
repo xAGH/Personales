@@ -1,31 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../static/css/style.css" rel="stylesheet">
-    </head>
-    <body class="registro">
-        <div class="principal">
-            <h1>Bienvenido</h1><br><br>
-            <h2>Formulario de registro</h2>
-            <br><br>
-            <form>
-                <input class="inputs" name="nombres" type="text" required placeholder="   Ingrese su nombre completo">
-                <input class="inputs" name="documento" type="text" required placeholder="   Ingrese su numero de documento">
-                <input class="inputs" name="email" type="email" required placeholder="   Ingrese su correo electronico">
-                <input class="inputs" name="contrasena" type="password" required placeholder="   Ingrese una contraseña">
-                <br>
-                <button type="submit">Registro</button>
-                <br>
-                <a href="login.html">¿Ya tienes una cuenta? Inicia Sesion</a>
-            </form>
-        </div>
-        <div class="lateral"></div>
-        <div class="lateral2"></div>
-        <div class="arriba"></div>
-        <div class="abajo"></div>
+{% extends "layout.html" %}
 
-    </body>
-</html>
+{% block body %}
+    {% if error %}
+        <script>
+            alert("{{error}}");
+            window.location("{{url_for('registrar_cliente')}}");
+        </script>
+    {% endif %}
+    <div class="principal">
+        <h1>Bienvenido</h1><br><br>
+        <h2>Formulario de registro</h2>
+        <br><br>
+        <form action="{{ url_for('registro_cliente') }}" method="POST">
+            <input class="inputs" name="nombres" type="text" required placeholder="Ingrese el nombre completo">
+            <input class="inputs" name="telefono" type="number" required placeholder="Ingrese el número de teléfono">
+            <input class="inputs" name="saldo" type="number" required placeholder="Ingrese el saldo pendiente (sin signos)">
+            <br>
+            <input type="submit" value="Registro">  
+            <br>
+        </form>
+    </div>
+    <div class="lateral"></div>
+    <div class="lateral2"></div>
+    <div class="arriba"></div>
+    <div class="abajo"></div>
+    
+{% endblock %}
