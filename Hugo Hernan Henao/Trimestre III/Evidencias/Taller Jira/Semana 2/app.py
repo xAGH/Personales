@@ -1,5 +1,5 @@
 from flask import Flask
-from controllers.Routes import *
+from Controllers.Routes import *
 
 app = Flask(__name__)
 app.secret_key = "q'9UpcvqOf,C!4NedKKp*r(EVtfFH:4*IpY2f*%Vws:-FdB'h4clwM2AynQn2'RG46:RIzw7aJ1wMtJ"

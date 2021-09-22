@@ -1,6 +1,6 @@
 from flask import request, redirect, render_template, url_for, flash
 from models.Models import *
-from validators.Validator import *
+from Validators.Validator import *
 
 validate = Validator()
 model = Models()

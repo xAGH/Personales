@@ -5,7 +5,7 @@ class Models():
     def __init__(self):
         self.config = {
             'user': 'root',
-            'password': 'alejo23001',
+            'password': 'Sena1234',
             'host': 'localhost',
             'database': 'hugo',
             'raise_on_warnings': True
