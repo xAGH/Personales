@@ -1,12 +1,15 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    {% if error %}
-        <script>
-            alert("{{error}}");
-            window.location("{{url_for('registrar_cliente')}}");
-        </script>
-    {% endif %}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <script>
+                    alert("{{message}}");
+                </script>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
     <div class="principal">
         <h1>Bienvenido</h1><br><br>
         <h2>Formulario de registro</h2>
@@ -16,6 +19,7 @@
             <input class="inputs" name="telefono" type="number" required placeholder="Ingrese el número de teléfono">
             <input class="inputs" name="saldo" type="number" required placeholder="Ingrese el saldo pendiente (sin signos)">
             <br>
+            <script>recuperarDatos()</script>
             <input type="submit" value="Registro">  
             <br>
         </form>
@@ -24,5 +28,4 @@
     <div class="lateral2"></div>
     <div class="arriba"></div>
     <div class="abajo"></div>
-    
 {% endblock %}

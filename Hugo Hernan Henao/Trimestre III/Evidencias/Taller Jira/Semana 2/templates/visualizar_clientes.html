@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    {% if data %}
+        <form action="{{ url_for('buscar_cliente') }}">
+            <input type="text" name="consulta" placeholder="Buscar...">
+            <input type="submit" value="🔍">
+        </form>
+            <a href="{{ url_for('ver_clientes') }}">Limpiar</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOMBRE</th>
+                    <th>TELÉFONO</th>
+                    <th>SALDO</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in data %}
+                    <tr>
+                        <td>{{ item[0] }}</td>
+                        <td>{{ item[1] }}</td>
+                        <td>{{ item[2] }}</td>
+                        <td>{{ item[3] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+    {% else %}
+        <h1>No hay clientes registrados.<a href="{{ url_for('registrar_cliente') }}">Registra un cliente.</a></h1>
+    {% endif %}
+{% endblock %}
