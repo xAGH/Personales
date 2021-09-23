@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:42vw auto;
+}
+
+.izq{
+    height: 100vh;
+    background: url("../images/fondo.jpg");
+    background-size: cover;
+}
+
+.der{
+    display: flex;
+    flex-direction: column;
+}
+
+.ADSI{
+    height: 47vh;
+    display: flex;
+}
+
+.ADSI img{
+    margin: auto;
+}
+
+.presentacion{
+    height: 35vh;
+    background-color: rgb(178, 226, 253);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer{
+    height: 18vh;
+}
+
+.foto-personal{
+    width: 220px;
+    height: 80%;
+}
+
+.nombre{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.ocupacion{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+.footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p{
+    font-size: 1.8rem;
+}
+
+@media screen  and (max-width:1400px){
+    html{
+        font-size: 12px;
+    }
+
+    
+    .foto-personal{
+        width: 200px;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width:1200px){
+    
+    .presentacion{
+        flex-direction: column;
+    }
+
+    .ADSI img{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:780px){
+   .izq{
+       display: none;
+   }
+   .der{
+       width: 100vw;
+   }
+}
+
+@media screen and (max-width:450px){
+    html{
+        font-size: 8px;
+    }
+
+    .foto-personal{
+        width: 150px;
+        height: 45%;
+    }
+
+
+    .footer p{
+        font-size:2.3rem;
+    }
+}   
