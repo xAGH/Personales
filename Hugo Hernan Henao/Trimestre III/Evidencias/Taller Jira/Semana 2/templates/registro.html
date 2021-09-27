@@ -17,7 +17,7 @@
         <form action="{{ url_for('registro_cliente') }}" method="POST">
             <input class="inputs" name="nombres" type="text" required placeholder="Ingrese el nombre completo">
             <input class="inputs" name="telefono" type="number" required placeholder="Ingrese el número de teléfono">
-            <input class="inputs" name="saldo" type="number" required placeholder="Ingrese el saldo pendiente (sin signos)">
+            <input class="inputs" name="saldo" type="number" required placeholder="Ingrese el saldo pendiente">
             <br>
             <script>recuperarDatos()</script>
             <input type="submit" value="Registro">  

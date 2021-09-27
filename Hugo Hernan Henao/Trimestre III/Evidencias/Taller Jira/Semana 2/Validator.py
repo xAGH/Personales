@@ -58,4 +58,4 @@ class Validator():
                 return True
 
         except:
-            return "Solo se admiten números."
+            return "Solo se admiten números en el saldo."
