@@ -1,23 +1,14 @@
 {% extends "layout.html" %}
 
 {% block body %}
-{% with messages = get_flashed_messages() %}
-    {% if messages %}
-        {% for message in messages %}
-            <script>
-                alert("{{message}}");
-            </script>
-        {% endfor %}
-    {% endif %}
-{% endwith %}
 <div class="principal">
     <h2>Editar Cliente</h2>
     <br><br>
-    <form action="http://127.0.0.1:5000/update/{{data[0][0]}}" method="POST">
-        <input class="inputs" name="nombres" type="text" required value="{{data[0][1]}}">
-        <input class="inputs" name="telefono" type="number" required value="{{data[0][2]}}">
+    <form action="http://127.0.0.1:5000/update/{{data[0]}}" method="POST">
+        <input class="inputs" name="nombres" type="text" required value="{{data[1]}}">
+        <input class="inputs" name="telefono" type="number" required value="{{data[2]}}">
         <label for="saldo">Saldo</label>
-        <input class="inputs" name="saldo" id="saldo" type="number" value="{{data[0][3]}}" disabled>
+        <input class="inputs" name="saldo" id="saldo" type="number" value="{{data[3]}}">
         <input type="number" id="valor" placeholder="Modificar Saldo">
         <button type="button" onclick="sumarSaldo()">Sumar Saldo</button>
         <button type="button" onclick="restarSaldo()">Restar Saldo</button>
@@ -25,6 +16,7 @@
         <input type="submit" value="Modificar">
         <br>
     </form>
+    <a href="{{ url_for('ver_clientes') }}">Volver</a>
     </div>
     <div class="lateral"></div>
     <div class="lateral2"></div>

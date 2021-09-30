@@ -51,7 +51,7 @@ class Validator():
             if len(saldo) == 0:
                 return "El saldo está vacio"
 
-            elif int(saldo) < 50 and int(saldo) > 0:
+            elif float(saldo) < 50 and float(saldo) > 0:
                 return "El saldo debe de ser mayor a 50 pesos"
 
             else:

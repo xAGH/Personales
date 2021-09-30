@@ -1,6 +1,15 @@
 {% extends "layout.html" %}
 
 {% block body %}
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <script>
+                alert("{{message}}");
+            </script>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
     {% if data or consulta%}
         <form action="{{ url_for('ver_clientes') }}">
             {% if consulta == None or consulta == "" %}
@@ -11,6 +20,7 @@
             <input type="submit" value="🔍">
         </form>
             <a href="{{ url_for('ver_clientes') }}">Limpiar</a>
+            <a href="{{ url_for('index') }}">Volver</a>
         {% if largor > 0 %}    
         <table>
             <thead>

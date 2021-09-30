@@ -4,7 +4,7 @@ class ManageDB():
    
     config = {
         'user': 'root',
-        'password': 'Sena1234',
+        'password': '',
         'host': 'localhost',
         'database': 'hugo',
         'raise_on_warnings': True
@@ -57,7 +57,7 @@ class ManageDB():
 class Models(ManageDB):
 
     def crear_cliente(self, nombre, saldo, movil):
-        return  self.fetch_all(f"INSERT INTO cliente(nombre, telefono, saldo) VALUES('{nombre}','{movil}',{saldo})")
+        return  self.do_commit(f"INSERT INTO cliente(nombre, telefono, saldo) VALUES('{nombre}','{movil}',{saldo})")
 
     def consultar_clientes(self):
         return self.fetch_all(f"SELECT * FROM cliente")
@@ -72,8 +72,8 @@ class Models(ManageDB):
 
     def editar_cliente(self, uid, nombre, saldo, telefono):
         return self.do_commit(f"""UPDATE cliente 
-                                  SET nombre = {nombre}, 
-                                  telefono = {telefono}, 
+                                  SET nombre = '{nombre}', 
+                                  telefono = '{telefono}', 
                                   saldo = {saldo}
                                   WHERE id = {uid}""")
 

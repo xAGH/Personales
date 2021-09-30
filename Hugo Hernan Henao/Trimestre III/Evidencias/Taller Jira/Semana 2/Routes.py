@@ -19,38 +19,20 @@ class Routes():
         nombre = request.form.get('nombres')
         telefono = request.form.get('telefono')
         saldo = request.form.get('saldo')
-        v_nombre = validate.validar_nombre(nombre)
-        v_telefono = validate.validar_telefono(telefono)
-        v_saldo = validate.validar_saldo(saldo)
         
-        if v_nombre != True or v_telefono != True or v_saldo != True:
-
-            title = "Registro de cliente"
-
-            if v_nombre != True:
-                flash(v_nombre)
-
-            if v_telefono != True:
-                flash(v_telefono)
-
-            if v_saldo != True:
-                flash(v_saldo)
-
-            return redirect(url_for("registrar_cliente"))
-
+        proceso = model.crear_cliente(nombre.title(), float(saldo), telefono)
+        if proceso != False:
+            flash("Se ha registrado correctamente el cliente.")
+        
         else:
-            proceso = model.crear_cliente(nombre.title(), float(saldo), telefono)
-            if proceso != False:
-                flash("Se ha registrado correctamente el cliente.")
-            
-            else:
-                flash("Ha ocurrido un error, no se ha registrado al cliente.")
+            flash("Ha ocurrido un error, no se ha registrado al cliente.")
 
-            return redirect(url_for('index'))
+        return redirect(url_for('index'))
 
     def ver_clientes(self):
         title = "Visualizar clientes"
         consulta = request.args.get('query')
+        print(consulta)
 
         if consulta == None:
             data = model.consultar_clientes()
@@ -64,38 +46,19 @@ class Routes():
 
     def editar_cliente(self):
         uid = request.args.get("id")
-        data = model.consultar_clientes()
+        data = model.obtener_datos(uid)
         return render_template("editar_cliente.html", data = data)
 
     def update(self, uid):
         nombre = request.form.get("nombres")
         telefono = request.form.get("telefono")
         saldo = request.form.get("saldo")
-        v_nombre = validate.validar_nombre(nombre)
-        v_telefono = validate.validar_telefono(telefono)
-        v_saldo = validate.validar_saldo(saldo)
         
-        if v_nombre != True or v_telefono != True or v_saldo != True:
-
-            title = "Editar cliente."
-
-            if v_nombre != True:
-                flash(v_nombre)
-
-            if v_telefono != True:
-                flash(v_telefono)
-
-            if v_saldo != True:
-                flash(v_saldo)
-
-            return redirect(f"http://127.0.0.1:5000/editar_cliente?id={uid}")
-
+        proceso = model.editar_cliente(uid, nombre.title(), float(saldo), telefono)
+        if proceso != False:
+            flash("Se ha editado correctamente el cliente.")
+        
         else:
-            proceso = model.editar_cliente(uid, nombre.title(), float(saldo), telefono)
-            if proceso != False:
-                flash("Se ha editado correctamente el cliente.")
-            
-            else:
-                flash("Ha ocurrido un error, no se ha editado al cliente.")
+            flash("Ha ocurrido un error, no se ha editado al cliente.")
 
-            return redirect(url_for('ver_clientes'))
+        return redirect(url_for('ver_clientes'))
