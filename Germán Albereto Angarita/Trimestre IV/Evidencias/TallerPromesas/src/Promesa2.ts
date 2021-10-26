@@ -1,8 +1,5 @@
-const promesa2: Promise<String> = new Promise<String>((resolve, reject) => {
-    reject(new Error("Ha ocurrido un error desconocido."))
-})
+const promesa2: Promise<any> = Promise.reject("Ha ocurrido un error desconocido.")
 
-promesa2
-    .catch((err) => {
-        console.error(err)
-    })
+promesa2.catch(err => {
+    console.error(err)
+})  

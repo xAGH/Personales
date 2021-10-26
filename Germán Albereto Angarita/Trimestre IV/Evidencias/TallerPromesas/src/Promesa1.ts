@@ -1,10 +1,5 @@
-const promesa1: Promise<String> = new Promise<String>((resolve) => {
-    resolve("Somos programadores, movemos al mundo.");
-})
+const promesa1: Promise<string> = Promise.resolve("Somos programadores, movemos al mundo.")
 
-promesa1.
-    then((resolve) => {
-        console.log(resolve)
-    }).catch((err) => {
-        console.log(err)
-    })
+promesa1.then(res => {
+    console.log(res)
+})
