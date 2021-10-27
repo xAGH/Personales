@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 
 class TratadoNumeros {
     
-    CrearFichero escribir = new CrearFichero();
+    CrearFichero escribir = new CrearFichero("numeros/numeros_generados.txt");
 
     int solicitarNumero() {
         Integer numero = 0;
@@ -33,8 +33,9 @@ class TratadoNumeros {
             int numero = (int) Math.floor(Math.random()*((-1000)-1000)+1001);
             escribir.agregarDatosAlArchivo(numero);
         }
+        
         escribir.terminarIngreso();
         System.out.print("\033[H\033[2J");
-        System.out.println("Los números generados se han guardaro en un archivo de texto con el nombre 'numeros_generados.txt'.\nLo podrá encontrar ubicándose fuera de esta carepeta('src').");
+        System.out.println("En la carpeta '../numeros' se encuentra el archivo con los números generados.\n");
     }
 }

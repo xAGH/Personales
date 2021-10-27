@@ -1,6 +1,6 @@
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
+import java.io.BufferedWriter;
 
 class CrearFichero {
 
@@ -8,9 +8,9 @@ class CrearFichero {
     FileWriter fw;
     BufferedWriter bw;
 
-    public CrearFichero(){
+    public CrearFichero(String nombre){
         try {
-            String ruta = "./numeros_generados.txt";
+            String ruta = "./" + nombre;
 
             this.file = new File(ruta);
 

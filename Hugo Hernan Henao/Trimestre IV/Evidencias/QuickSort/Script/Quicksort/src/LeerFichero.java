@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileReader;
 import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class LeerFichero {
 
@@ -8,9 +9,9 @@ public class LeerFichero {
     FileReader fr;
     BufferedReader br;
 
-    public LeerFichero(){
+    public LeerFichero(String nombre_ruta){
         try {
-            String ruta = "./numeros_generados.txt";
+            String ruta = nombre_ruta;
 
             this.file = new File(ruta);
 
@@ -26,29 +27,40 @@ public class LeerFichero {
         }
     }
 
-    int[] obtenerDatos(int cantidad){
-        int[] numeros = new int[cantidad];
+    int[] obtenerDatos(int[] numeros){
         try {
             String linea;
             int bandera = 0;
+            
             while((linea = this.br.readLine()) != null){
                 numeros[bandera] = Integer.parseInt(linea);
                 bandera ++;
             }
+
+            this.br.close();
+            this.fr.close();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         return numeros;
     }
 
-    void terminarLeer(){
-        try {
-            this.br.close();
-            this.fr.close();
-            this.file.delete();
+    void borrarArchivo(){
+        System.out.print("¿Desea borrar el archivo de texto con los números generados aleatoriamente.?\n1. Si.\n2.No.\nOpción: ");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        try{
+            int decision = Integer.parseInt(reader.readLine());
+            if (decision == 1){
+                System.out.println("Archivo de números generados eliminados.");
+                this.file.delete();
+                return;
+            }
+            System.out.println("Archivo de números generados almacenado.");
         }
-        catch (Exception e) {
-            e.printStackTrace();
+        catch (Exception e){
+            System.out.println("Archivo de números generados almacenado.");
         }
-    };
+    }
 }

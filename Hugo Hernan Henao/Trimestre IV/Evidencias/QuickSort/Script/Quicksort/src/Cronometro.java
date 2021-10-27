@@ -13,12 +13,12 @@ public class Cronometro {
 
         if (milisegundos > 999) {
             segundos = (int) Math.floor(milisegundos / 1000);
-            milisegundos = (int) (milisegundos % 1000);
+            milisegundos = (int) Math.floor(milisegundos % 1000);
         }
 
         if(segundos > 59) {
             minutos = (int) Math.floor(segundos / 60);
-            segundos = segundos % 60;
+            segundos = (int) Math.floor(segundos % 60);
         }
 
         if(minutos > 59) {
@@ -26,7 +26,7 @@ public class Cronometro {
             minutos = (int) Math.floor(minutos % 60);
         }
 
-        return formatearResultado(milisegundos, segundos, horas, minutos);
+        return formatearResultado(milisegundos, segundos, minutos, horas);
     }
 
     static String formatearResultado(long mm, int s, int m, int h) {
@@ -36,6 +36,6 @@ public class Cronometro {
         String horas = String.format("%0" + 2 + "d", h);
         
         return horas + ":" + minutos + ":" + segundos + "." + milisegundos;
-    } 
+    }
 
 }
