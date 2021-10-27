@@ -27,10 +27,10 @@ public class EmpleadoPlanilla extends Empleado{
 
     @Override
     public void imprimirDatosPersona(String datos) {
-        datos += "Salario mensual: " + this.getSalarioMensual() + "\n";
-        datos += "Porcentaje adicional por hora extra: " + this.getPorcentajeAdicionalPorHoraExtra() + "\n";
-
         super.imprimirDatosPersona(datos);
+
+        datos = "Salario mensual: " + this.getSalarioMensual() + "\n";
+        datos += "Porcentaje adicional por hora extra: " + this.getPorcentajeAdicionalPorHoraExtra() + "\n";
     }
 
     public double getSalarioMensual() {

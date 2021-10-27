@@ -23,10 +23,10 @@ public class EmpleadoEventual extends Empleado{
 
     @Override
     public void imprimirDatosPersona(String datos) {
-        datos += "Horarios por hora: " + this.getHonorariosPorHoras() + "\n";
-        datos += "Fecha de terminación de contrato" + this.getFechaTerminoContrato() + "\n";
-
         super.imprimirDatosPersona(datos);
+
+        datos = "Horarios por hora: " + this.getHonorariosPorHoras() + "\n";
+        datos += "Fecha de terminación de contrato" + this.getFechaTerminoContrato() + "\n";
     }
 
     public double getHonorariosPorHoras() {

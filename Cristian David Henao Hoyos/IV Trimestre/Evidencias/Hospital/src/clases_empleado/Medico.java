@@ -26,10 +26,10 @@ public class Medico extends EmpleadoPlanilla{
 
     @Override
     public void imprimirDatosPersona(String datos) {
-        datos += "Especialidad: " + this.getEspecialidad() + "\n";
-        datos += "Número de consultorio: " + this.getNumeroDeConsultorio() + "\n";
-
         super.imprimirDatosPersona(datos);
+
+        datos = "Especialidad: " + this.getEspecialidad() + "\n";
+        datos += "Número de consultorio: " + this.getNumeroDeConsultorio() + "\n";
     }
 
     public void setEspecialidad(String especialidad) {

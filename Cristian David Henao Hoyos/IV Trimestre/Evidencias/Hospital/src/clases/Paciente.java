@@ -41,8 +41,9 @@ public class Paciente extends Persona {
 
     @Override
     public void imprimirDatosPersona(String datos) {
-        
-        datos += "Número de historia clínica: " + this.getNumeroHistoriaClinica() + "\n";
+        super.imprimirDatosPersona(datos);
+
+        datos = "Número de historia clínica: " + this.getNumeroHistoriaClinica() + "\n";
         datos += "Sexo: " + this.getSexo() + "\n";
         datos += "Grupo sanguíneo: " + this.getGrupoSanguineo() + "\n";
         
@@ -53,10 +54,10 @@ public class Paciente extends Persona {
             }
         }
         else{
-            datos += this.getNombre() + " no es alérgico a ningún medicamento.";
+            datos += this.getNombre() + " no es alérgico a ningún medicamento.\n";
         }
         
-        super.imprimirDatosPersona(datos);
+        System.out.println(datos);
     }
 
     public int getNumeroHistoriaClinica() {

@@ -1,4 +1,6 @@
 import javax.swing.JOptionPane;
+
+import clases.CitaMedica;
 import clases.ModeloDatos;
 import clases.Paciente;
 import clases_empleado.EmpleadoEventual;
@@ -11,7 +13,7 @@ public class Procesos {
 
     public Procesos(){
         this.miModeloDatos = new ModeloDatos();
-        presentarMenuOpciones();
+        this.presentarMenuOpciones();
     }
 
     private void presentarMenuOpciones() {
@@ -23,20 +25,26 @@ public class Procesos {
         menu += "5. Salir\n\n";
         menu += "Ingrese una opción: \n";
 
-        int opcion = 0;
-
+        String opcion = "";
         do {
-            opcion = Integer.parseInt(JOptionPane.showInputDialog(menu));
-            switch (opcion) {
-                case 1: this.registarPaciente(); break;
-                case 2: this.registarEmpleado(); break;
-                case 3: this.registarCitaMedica(); break;
-                case 4: this.registarInformacion(); break;
-                case 5: JOptionPane.showMessageDialog(null, "El sistema ha terminado."); break;
-                default: JOptionPane.showMessageDialog(null, "No existe el código, verifique nuevamente."); break;
+            opcion = JOptionPane.showInputDialog(menu);
+            if (opcion == null) {
+                System.exit(0);
+            }
+            try {
+                switch (Integer.parseInt(opcion)) {
+                    case 1: this.registarPaciente(); break;
+                    case 2: this.registarEmpleado(); break;
+                    case 3: this.registarCitaMedica(); break;
+                    case 4: this.imprimirInformacion(); break;
+                    case 5: JOptionPane.showMessageDialog(null, "El sistema ha terminado."); break;
+                    default: JOptionPane.showMessageDialog(null, "No existe el código, verifique nuevamente."); break;
+                }
+            } catch (Exception e) {
+                opcion = "0";
             }
         }
-        while(opcion != 5);
+        while(Integer.parseInt(opcion) != 5);
     }
 
     private void registarPaciente(){
@@ -91,11 +99,31 @@ public class Procesos {
     }
 
     private void registarCitaMedica(){
-        
-    }
+        String documentoPaciente = JOptionPane.showInputDialog("Ingrese el documento del paciente: ");
 
-    private void registarInformacion(){
-        
+        Paciente pacienteEncontrado = this.miModeloDatos.consultarPacientePorDocumento(documentoPaciente);
+
+        if (pacienteEncontrado != null){
+            String nombreMedico = JOptionPane.showInputDialog("Ingrese el nombre del médico: ");
+            Medico medicoEncontrado = this.miModeloDatos.consultarMedicoPorNombre(nombreMedico);
+
+            if(medicoEncontrado != null){
+                String servicio = JOptionPane.showInputDialog("Ingrese el servicio o motivo de la consulta: ");
+                String fechaConsulta = JOptionPane.showInputDialog("Ingrese la fecha de la consulta(dd/mm/aaaa):");
+                String horaConsulta = JOptionPane.showInputDialog("Ingrese la hora de la consulta");
+                String lugar = JOptionPane.showInputDialog("La cita será en el consultorio: " + medicoEncontrado.getNumeroDeConsultorio());
+
+                CitaMedica miCita = new CitaMedica(pacienteEncontrado, medicoEncontrado, servicio, fechaConsulta, horaConsulta, lugar);
+                this.miModeloDatos.registarCitaMedica(miCita);
+            }
+
+            else{
+                JOptionPane.showInputDialog("El médico no se encuentra registrado en el sistema");
+            }
+        }   
+        else{
+            JOptionPane.showInputDialog("El paciente no se encuentra registrado en el sistema");
+        }
     }
 
     private void imprimirInformacion(){
@@ -105,6 +133,7 @@ public class Procesos {
         menuImprimir += "2. Listar Empleados Eventuales.\n";
         menuImprimir += "3. Listar Empleados Por Planilla.\n";
         menuImprimir += "4. Listar Médicos.\n";
+        menuImprimir += "5. Listar Citas Programadas.\n";
         menuImprimir += "Ingrese una opción.\n";
         System.out.println("*******************************************************");
 
@@ -121,6 +150,7 @@ public class Procesos {
             case 2: this.miModeloDatos.imprimirEmpleadosEventuales();  break;
             case 3: this.miModeloDatos.imprimirEmpleadosPorPlanilla();  break;
             case 4: this.miModeloDatos.imprimirMedicos();  break;
+            case 5: this.miModeloDatos.imprimirCitasMedicasProgramadas();  break;
             default: JOptionPane.showMessageDialog(null, "No existe esa opción"); break;
         }
         return; 

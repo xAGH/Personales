@@ -27,19 +27,23 @@ public class ModeloDatos {
     }
 
     public void registarPersona(Paciente miPaciente) {
-
+        pacientesMap.put(miPaciente.getNumeroDeCC(), miPaciente);
+        JOptionPane.showMessageDialog(null, "Se ha registrado al paciente" + miPaciente.getNombre() + " satisfactoriamente.");
     }
 
     public void registarPersona(EmpleadoPlanilla miEmpleadoPlanilla) {
-
+        empleadoPlanillaMap.put(miEmpleadoPlanilla.getNumeroDeCC(), miEmpleadoPlanilla);
+        JOptionPane.showMessageDialog(null, "Se ha registrado al empleado por planilla" + miEmpleadoPlanilla.getNombre() + " satisfactoriamente.");
     }
 
     public void registarPersona(EmpleadoEventual miEmpleadoEventual) {
-
+        empleadoEventualMap.put(miEmpleadoEventual.getNumeroDeCC(), miEmpleadoEventual);
+        JOptionPane.showMessageDialog(null, "Se ha registrado al empleado eventual" + miEmpleadoEventual.getNombre() + " satisfactoriamente.");
     }
 
     public void registarPersona(Medico miMedico) {
-
+        medicoMap.put(miMedico.getNumeroDeCC(), miMedico);
+        JOptionPane.showMessageDialog(null, "Se ha registrado al médico" + miMedico.getNombre() + " satisfactoriamente.");
     }
 
     public void registarCitaMedica(CitaMedica miCita) {
@@ -80,6 +84,24 @@ public class ModeloDatos {
         } 
     }
 
+    public void imprimirCitasMedicasProgramadas(){
+        this.msj = "CITAS MÉDICAS PROGRAMADAS\n";
+        CitaMedica miCita = null;
+
+        System.out.println(this.msj);
+
+        if (this.citasList.size() > 0){
+            for(int i = 0; i < this.citasList.size(); i++){
+                miCita = citasList.get(i);
+                System.out.println(miCita.informacionCitaMedica());
+            } 
+        }
+
+        else{
+            System.out.println("No hay citas programadas.");
+        }
+    }
+
     public Paciente consultarPacientePorDocumento(String documentoPaciente){
         Paciente miPaciente = null;
 
@@ -101,4 +123,5 @@ public class ModeloDatos {
         return null;
     }
 
+    
 }
