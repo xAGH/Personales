@@ -12,22 +12,22 @@ public abstract class Persona {
     private String ciudadDeProcedencia;
 
     public void imprimirDatosPersona(String datos){
-        datos += "Nombre: " + getNombre() + "\n";
-        datos += "Apellido: " + getApellido() + "\n";
-        datos += "Fecha de nacimiento: " + getFechaDeNacimiento() + "\n";
-        datos += "Dirección: " + getDireccion() + "\n";
-        datos += "Ciuadad de procedencia" + getCiudadDeProcedencia() +"\n";
+        datos += "Nombre: " + this.getNombre() + "\n";
+        datos += "Apellido: " + this.getApellido() + "\n";
+        datos += "Fecha de nacimiento: " + this.getFechaDeNacimiento() + "\n";
+        datos += "Dirección: " + this.getDireccion() + "\n";
+        datos += "Ciuadad de procedencia" + this.getCiudadDeProcedencia() +"\n";
 
-        JOptionPane.showMessageDialog(null, datos);
+        System.out.println(datos);
     }
 
     public void registrarDatos(){
-        setNumeroDeCC(JOptionPane.showInputDialog("Ingrese el número de documento: "));
-        setNombre(JOptionPane.showInputDialog("Ingrese el nombre: "));
-        setApellido(JOptionPane.showInputDialog("Ingrese el apellido: "));
-        setFechaDeNacimiento(JOptionPane.showInputDialog("Ingrese la fecha de nacimiento (dd/mm/aaaa): "));
-        setDireccion(JOptionPane.showInputDialog("Ingrese la dirección: "));
-        setCiudadDeProcedencia(javax.swing.JOptionPane.showInputDialog("Ingrese la ciudad de procedencia: "));
+        this.setNumeroDeCC(JOptionPane.showInputDialog("Ingrese el número de documento: "));
+        this.setNombre(JOptionPane.showInputDialog("Ingrese el nombre: "));
+        this.setApellido(JOptionPane.showInputDialog("Ingrese el apellido: "));
+        this.setFechaDeNacimiento(JOptionPane.showInputDialog("Ingrese la fecha de nacimiento (dd/mm/aaaa): "));
+        this.setDireccion(JOptionPane.showInputDialog("Ingrese la dirección: "));
+        this.setCiudadDeProcedencia(javax.swing.JOptionPane.showInputDialog("Ingrese la ciudad de procedencia: "));
     }
 
     public String getNumeroDeCC() {
