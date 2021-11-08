@@ -1,0 +1,14 @@
+<section class="game-card" [ngClass]="!reverse ? cardType : ''">
+  <div *ngIf="selected" class="selection-wrapper">
+    <i class="bx bxs-checkbox-checked"></i>
+  </div>
+  <div class="card-container" *ngIf="!reverse; else reverseBlock">
+    <div class="image-holder">
+      <img [src]="cardImgUrl" alt="">
+    </div>
+    <div class="title"><p class="bold-1" [ngClass]="!reverse ? cardType : ''">{{cardTitle}}</p></div>
+  </div>
+  <ng-template #reverseBlock>
+    <img class="gem-icon" src="assets/svg/gem.svg" alt="" srcset="">
+  </ng-template>
+</section>
