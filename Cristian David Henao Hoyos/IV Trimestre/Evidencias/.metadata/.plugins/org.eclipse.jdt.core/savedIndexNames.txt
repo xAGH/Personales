@@ -1,6 +1,0 @@
-INDEX VERSION 1.131+F:\SENA\Cristian David Henao Hoyos\IV Trimestre\Evidencias\.metadata\.plugins\org.eclipse.jdt.core
-88820681.index
-3355040480.index
-1731553518.index
-633596653.index
-1865797976.index
