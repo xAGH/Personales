@@ -1,5 +1,6 @@
+EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
 SWITCH_PERSPECTIVE_ON_PROJECT_CREATION=always
 eclipse.preferences.version=1
-platformState=1636120325584
+platformState=1637328052800
 quickStart=false
 tipsAndTricks=true

@@ -1,5 +1,4 @@
 import java.awt.BorderLayout;
-import java.awt.EventQueue;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -8,31 +7,16 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import java.awt.Font;
-import java.awt.GridLayout;
 
 import javax.swing.BoxLayout;
 import java.awt.Color;
-import javax.swing.border.EtchedBorder;
-import javax.swing.border.TitledBorder;
-import javax.swing.UIManager;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
 import java.awt.Cursor;
-import java.awt.SystemColor;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JTextPane;
 import java.awt.FlowLayout;
-import java.awt.CardLayout;
-import java.awt.GridBagLayout;
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
-import com.jgoodies.forms.layout.FormLayout;
-import com.jgoodies.forms.layout.ColumnSpec;
-import com.jgoodies.forms.layout.FormSpecs;
-import com.jgoodies.forms.layout.RowSpec;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
 
 
 @SuppressWarnings("serial")
@@ -54,18 +38,15 @@ public class Ejercicio11 extends JFrame implements MouseListener{
 	private JButton btnEliminar;
 	private JTextPane txtNumeros;
 	private JPanel panelEliminar;
-	
-	public static void main(String[] args) {
-		Ejercicio11 frame = new Ejercicio11();
-		frame.setVisible(true);
-	}
 
 	public Ejercicio11() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(450, 300);
+		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+		setSize(650, 500);
+		setResizable(false);
 		setLocationRelativeTo(null);
 		ventanaPrincipal = new JPanel();
 		setContentPane(ventanaPrincipal);
+		addWindowListener(new Ventana());
 		iniciarComponentes();
 	}
 
@@ -74,12 +55,12 @@ public class Ejercicio11 extends JFrame implements MouseListener{
 		ventanaPrincipal.setLayout(new BorderLayout(0, 0));
 		
 		lblTitulo = new JLabel("Ejercicio 11");
-		lblTitulo.setFont(new Font("Arial Black", Font.PLAIN, 26));
+		lblTitulo.setFont(new Font("Verdana", Font.BOLD, 50));
 		lblTitulo.setHorizontalAlignment(SwingConstants.CENTER);
 		ventanaPrincipal.add(lblTitulo, BorderLayout.NORTH);		
 		
 		panelNumeros = new JPanel();
-		ventanaPrincipal.add(panelNumeros, BorderLayout.WEST);
+		ventanaPrincipal.add(panelNumeros, BorderLayout.CENTER);
 		
 		
 		etiCero = new JLabel("0");
@@ -142,8 +123,7 @@ public class Ejercicio11 extends JFrame implements MouseListener{
 		etiNueve.setHorizontalAlignment(SwingConstants.CENTER);
 		etiNueve.setFont(new Font("Arial", Font.PLAIN, 24));
 		etiNueve.addMouseListener(this);
-		
-		panelNumeros.setLayout(new FlowLayout(FlowLayout.CENTER, 20, 75));
+		panelNumeros.setLayout(new FlowLayout(FlowLayout.CENTER, 40, 165));
 		panelNumeros.add(etiCero);
 		panelNumeros.add(etiUno);
 		panelNumeros.add(etiDos);
@@ -172,6 +152,8 @@ public class Ejercicio11 extends JFrame implements MouseListener{
 		btnEliminar.setForeground(Color.BLACK);
 		btnEliminar.setFont(new Font("Arial", Font.PLAIN, 20));
 		btnEliminar.addMouseListener(this);
+		panelEliminar.add(btnEliminar);
+		
 	}
 
 	@Override

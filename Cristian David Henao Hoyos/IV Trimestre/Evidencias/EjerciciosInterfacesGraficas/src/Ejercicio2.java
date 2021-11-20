@@ -13,6 +13,7 @@ import javax.swing.SwingConstants;
 import java.awt.Font;
 import javax.swing.JTextField;
 
+@SuppressWarnings("serial")
 public class Ejercicio2 extends JFrame implements ActionListener {
 
 	private JPanel ventanaPrincipal;
@@ -27,26 +28,22 @@ public class Ejercicio2 extends JFrame implements ActionListener {
 	private JPanel panelBtn;
 	private JTextField txtTexto;
 
-	public static void main(String[] args) {
-		Ejercicio2 frame = new Ejercicio2();
-		frame.setVisible(true);
-	}
-
 	public Ejercicio2() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(723, 521);
+		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+		setSize(650, 500);
+		setResizable(false);
 		setLocationRelativeTo(null);
 		ventanaPrincipal = new JPanel();
 		ventanaPrincipal.setBorder(new EmptyBorder(5, 5, 5, 5));
 		ventanaPrincipal.setLayout(new BorderLayout(0, 0));
 		setContentPane(ventanaPrincipal);
-
+		addWindowListener(new Ventana());
 		iniciarComponentes();
 	}
 
 	private void iniciarComponentes() {
 		lblTitulo = new JLabel("Ejercicio 2");
-		lblTitulo.setFont(new Font("Arial Black", Font.PLAIN, 32));
+		lblTitulo.setFont(new Font("Verdana", Font.BOLD, 50));
 		lblTitulo.setHorizontalAlignment(SwingConstants.CENTER);
 		ventanaPrincipal.add(lblTitulo, BorderLayout.NORTH);
 
