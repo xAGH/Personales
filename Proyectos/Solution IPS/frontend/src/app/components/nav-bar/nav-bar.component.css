@@ -1,0 +1,17 @@
+nav{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 6rem;
+    margin-left:8%;
+}

@@ -1,0 +1,14 @@
+<div class="contenedor">
+
+    <app-nav-bar [titulo] = 'titulo'></app-nav-bar>
+
+    <div class="contenido">
+        <img class="logo" src="../../../assets/logo.jpg" alt="">
+        <div class="flex-center items">
+                <div *ngFor="let opcion of opciones" class="item">
+                    <img src="../../../assets/{{ opcion.ruta }}" alt="Servicio">
+                    <p class="text">{{ opcion.nombre }}</p>
+                </div>
+        </div>
+    </div>
+</div>
