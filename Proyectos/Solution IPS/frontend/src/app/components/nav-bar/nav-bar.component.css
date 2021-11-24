@@ -1,5 +1,5 @@
 nav{
-    background-color: antiquewhite;
+    background-image: url("../../../assets/banner.jpg");
     display: flex;
     align-items: center;
     -webkit-background-size: cover;
