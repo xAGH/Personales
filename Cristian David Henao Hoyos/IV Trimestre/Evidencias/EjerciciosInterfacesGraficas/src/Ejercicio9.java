@@ -89,7 +89,6 @@ public class Ejercicio9 extends JFrame implements ActionListener {
 		lblTercerTrimestre.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTercerTrimestre.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		panelNotas.add(lblTercerTrimestre);
-		
 		txtTercerTrimestre = new JTextField();
 		txtTercerTrimestre.setHorizontalAlignment(SwingConstants.LEFT);
 		txtTercerTrimestre.setFont(new Font("Tahoma", Font.PLAIN, 16));
