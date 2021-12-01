@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modulo-clinico.component.css']
 })
 export class ModuloClinicoComponent implements OnInit {
-  
+
   titulo: string;
   opciones: any = [
     {ruta:"cubo.png", nombre:"Medicina"},
