@@ -15,6 +15,7 @@ export class ModuloClinicoComponent implements OnInit {
     {ruta:"cubo.png", nombre:"Optometría"},
     {ruta:"cubo.png", nombre:"Fonoaudiología"},
     {ruta:"cubo.png", nombre:"Certificación"},
+    
   ]
 
   constructor() {
