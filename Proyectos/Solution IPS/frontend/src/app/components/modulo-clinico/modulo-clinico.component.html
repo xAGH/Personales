@@ -1,34 +1,6 @@
-<<<<<<< HEAD
-<div class="grid grid-rows-35/65 max-h-screen">
+<div class="grid grid-rows-40/60 max-h-screen ">
 
    <app-nav-bar [titulo]='titulo'></app-nav-bar>
-
-   <div class="grid grid-cols-2">
-        
-        <section class="flex items-center justify-center">
-            <img class="w-1/2" src="https://i.imgur.com/yLhYGvQ.jpg" alt="Logo Solution IPS">
-        </section>
-
-        <section class="grid grid-rows-6 grid-cols-auto">
-            <div *ngFor="let opcion of opciones" class="flex items-center w-full mb-3.5">
-                <img src="../../../assets/{{ opcion.ruta }}" alt="Servicio">
-                <p class="text-2xl ml-8">{{ opcion.nombre }}</p>
-            </div>
-        </section>
-=======
-<div class="grid grid-rows-35/65 h-screen">
-
-    <app-nav-bar class="" [titulo]='titulo'></app-nav-bar>
-
-  <div class="grid grid-cols-2">
-    <img class="w-96 m-auto" src="https://raw.githubusercontent.com/xAGH/SolutionIPS/main/frontend/src/assets/logo.jpg" alt="">
-
-    <div class="flex items-center flex-col justify-center">
-        <div *ngFor="let opcion of opciones" class="item">
-            <img src="../../../assets/{{ opcion.ruta }}" alt="Servicio">
-            <p class="text">{{ opcion.nombre }}</p>
-        </div>
-    </div>
->>>>>>> e6ebf4b763afbaab867e39fed1e201b20e5c84cd
-   </div>
+            
+   <app-opciones-menu [opciones]="opciones" class="grid"></app-opciones-menu>
 </div>

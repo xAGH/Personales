@@ -8,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class ModuloClinicoComponent implements OnInit {
 
   titulo: string;
+
   opciones: any = [
-    {ruta:"cubo.png", nombre:"Medicina"},
-    {ruta:"cubo.png", nombre:"Laboratorio"},
-    {ruta:"cubo.png", nombre:"Psicología"},
-    {ruta:"cubo.png", nombre:"Optometría"},
-    {ruta:"cubo.png", nombre:"Fonoaudiología"},
-    {ruta:"cubo.png", nombre:"Certificación"},
-    
+    {ruta:"https://i.imgur.com/54T21mn.jpeg", nombre:"Medicina", link:"/medicina"},
+    {ruta:"https://i.imgur.com/3mmdq4F.jpeg", nombre:"Laboratorio", link:"/laboratorio" },
+    {ruta:"https://i.imgur.com/WUc32cB.jpeg", nombre:"Psicología", link:"/psicologia"},
+    {ruta:"https://i.imgur.com/T30LLEB.jpeg", nombre:"Optometría", link:"/optometria"},
+    {ruta:"https://i.imgur.com/cFJgPCV.jpeg", nombre:"Fonoaudiología", link:"/fonoaudiologia"},
+    {ruta:"https://i.imgur.com/k1vxdH2.jpeg", nombre:"Certificación", link:"/certificacion"},
   ]
 
   constructor() {

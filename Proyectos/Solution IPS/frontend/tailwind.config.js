@@ -8,9 +8,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'banner': "url('https://raw.githubusercontent.com/xAGH/SolutionIPS/main/frontend/src/assets/banner.jpg')", 
+        'banner': "url('https://i.imgur.com/jKV8zmd.jpeg')", 
       }, gridTemplateRows: {
-        '35/65': '35vh 65vh'
+        '40/60': '40vh 60vh'
+      },
+      width: {
+        '18': '280px',
       }
     }
   },
@@ -18,4 +21,6 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+
+  
 }

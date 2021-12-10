@@ -2,7 +2,7 @@ package modelos;
 
 import java.util.ArrayList;
 
-// Clase que proporcionará el VO
+// Clase que proporcionarï¿½ el VO
 public class Trabajadores {
 	
 	private ArrayList<Trabajador> listaTrabajadores;
