@@ -1,4 +1,3 @@
-from re import DEBUG
 from src.app import Application
 
 def start() -> None:

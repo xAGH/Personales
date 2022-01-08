@@ -17,5 +17,5 @@ class CardsController(MethodView):
         mod_card = request.json["mod_card"]
         error_card = request.json["error_card"]
         room = request.json["room"]
-        
+
         return self.cards.accusation(room, dev_card, mod_card, error_card, user_id)
