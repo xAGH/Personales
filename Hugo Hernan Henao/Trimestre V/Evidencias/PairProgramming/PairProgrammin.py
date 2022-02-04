@@ -56,21 +56,44 @@ def datos_listas(cantidad):
 
         else:
             if len(datos) < longitud: 
-                numeros = " ".join(datos)
+                numeros = []
+                for j in range(len(datos)):
+                    numeros.append(str(datos[j]))
                 restantes = longitud - len(datos)
                 articulo = "el" if restantes == 0 else "los"
                 completar = "número que falta" if restantes == 1 else f"{restantes} números que faltan."
-                print(f"""Ingresó {len(datos)} números, la lista debe tener {longitud} números ya que la primera lista tiene esta cantidad de datos.
-                Ingrese {articulo} {completar}:""")
+                print(f"Ingresó {len(datos)} números, la lista debe tener {longitud} números ya que la primera lista tiene esta cantidad de datos. Ingrese {articulo} {completar}:")
             else:
                 ...
 
-
     print(contenido_listas)
 
+def calculo_promedio(lista):
+    largor = len(lista)
+    suma = 0
+    for i in range(largor):
+        suma += lista[i]
+    return suma / largor
+
+def calculo_desviacion(lista):
+    promedio = calculo_promedio(lista)
+    largor = len(lista)
+    suma = 0
+    for i in range (largor):
+        suma += abs(promedio - lista[i])
+    return suma / largor, promedio
+
+def ordenar_listas(lista_nombres, lista_datos, lista_resultados):
+    nombres_organizados = []
+    datos_organizados = []
+    resultados_organizados = []
+    
+
 def main():
+    # print(calculo_desviacion([2, 9, 10, 2, 3, 1, 9, 9 ,1 ,4])) # 3.4
+    # print(calculo_desviacion([7, 2, 2, 6, 6, 3, 6, 7, 6, 5])) # 1.6
+    # print(calculo_desviacion([5, 6, 5, 5, 5, 5, 4, 5, 6, 4])) #0.4
     cantidad = cantidad_listas()
-    datos_listas(cantidad)
 
 if __name__ == "__main__":
     main()
