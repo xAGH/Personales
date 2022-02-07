@@ -1,2 +1,3 @@
 .vscode
-/Cristian David Henao Hoyos/IV Trimestre/Evidencias/EjerciciosInterfacesGraficas/nbproject/private/
+__pycache__
+node_modules
