@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Importamos los módulos del sistema.
 import sys, os
 
@@ -13,7 +14,7 @@ def cantidad_listas():
     """
     while True:
         try:
-            cantidad_listas = abs(int(input("Ingrese la cantidad de listas: ")))
+            cantidad_listas = abs(int(input("Ingrese la cantidad de listas a procesar: ")))
             return cantidad_listas
         except:
             print("La cantidad de listas debe de ser un número entero.")
@@ -25,20 +26,19 @@ def nombres_listas(cantidad):
     nombres = []
     for i in range(cantidad):
         nombre = input(f"Nombre de la lista #{i + 1}: ")
-        nombres.append(nombre)
-    return nombres
+        nombres.append([nombre])
+    return nombres    
 
 def datos_listas(cantidad):
     """
     Función para ingresar datos a cada lista.
     """
-    nombres = nombres_listas(cantidad)
-    contenido_listas = []
+    listas = nombres_listas(cantidad)
+    print("\n================================================================================")
     i = 0
     while i != cantidad:
         j = 0
-        datos = []
-        datos = input(f"Ingrese los datos de la lista {nombres[i]} separados por espacios (ej: 1 2 3.3 4,5): ")
+        datos = input(f"Ingrese los datos de la lista {listas[i][0]} separados por espacios (ej: 1 2 3.3 4,5): ")
         datos = datos.replace(",", ".")
         datos = datos.split()
         longitud = len(datos) if i == 0 else longitud
@@ -51,49 +51,72 @@ def datos_listas(cantidad):
                     j += 1
                 except:
                     datos[j] = input(f"Ingresó un valor que no es un número real ({datos[j]}), por favor ingrese un valor válido: ").replace(",", ".")
-            contenido_listas.append(datos)
+            listas[i].append(datos)
             i += 1
 
         else:
-            if len(datos) < longitud: 
-                numeros = []
-                for j in range(len(datos)):
-                    numeros.append(str(datos[j]))
-                restantes = longitud - len(datos)
-                articulo = "el" if restantes == 0 else "los"
-                completar = "número que falta" if restantes == 1 else f"{restantes} números que faltan."
-                print(f"Ingresó {len(datos)} números, la lista debe tener {longitud} números ya que la primera lista tiene esta cantidad de datos. Ingrese {articulo} {completar}:")
-            else:
-                ...
+            print(f"\nLa longitud de la lista {listas[i][0]}({len(datos)} dato(s)) no coincide con la lista {listas[0][0]}({len(listas[0][1])} dato(s))\n")
 
-    print(contenido_listas)
+    return listas
 
 def calculo_promedio(lista):
-    largor = len(lista)
-    suma = 0
-    for i in range(largor):
-        suma += lista[i]
-    return suma / largor
+    """
+    Funcion para calcular el promedio
+    """
+    for j in range(len(lista)):
+        largor = len(lista[j][1])
+        suma = 0
+        for i in range(largor):
+            suma += lista[j][1][i]
+        promedio = suma / largor
+        lista[j].append([round(promedio, 2)])
+    return lista
 
 def calculo_desviacion(lista):
-    promedio = calculo_promedio(lista)
-    largor = len(lista)
-    suma = 0
-    for i in range (largor):
-        suma += abs(promedio - lista[i])
-    return suma / largor, promedio
+    """
+    Funcion para calcular la desviacion media
+    """
+    lista = calculo_promedio(lista)
+    for j in range(len(lista)):
+        promedio = lista[j][2][0]
+        largor = len(lista[j][1])
+        suma = 0
+        for i in range (largor):
+            suma += abs(promedio - lista[j][1][i])
+        desviacion = suma / largor
+        lista[j][2].append(round(desviacion, 2))
+    return lista
 
-def ordenar_listas(lista_nombres, lista_datos, lista_resultados):
-    nombres_organizados = []
-    datos_organizados = []
-    resultados_organizados = []
-    
+
+def ordenar_datos(lista):
+    """
+    Funcion para ordenar datos segun su desviacion media
+    """
+    lista.sort(key=lambda x: x[2][1])
+    return lista
+
+def imprimir(lista):
+    """
+    Funcion para imprimir con formato las listas
+    """
+    print("\n================================================================================")
+    for i in range(len(lista)):
+        print(f"Lista {lista[i][0]} presenta una media de {lista[i][2][0]} y una desviación respecto a la media de de {lista[i][2][1]}")
 
 def main():
-    # print(calculo_desviacion([2, 9, 10, 2, 3, 1, 9, 9 ,1 ,4])) # 3.4
-    # print(calculo_desviacion([7, 2, 2, 6, 6, 3, 6, 7, 6, 5])) # 1.6
-    # print(calculo_desviacion([5, 6, 5, 5, 5, 5, 4, 5, 6, 4])) #0.4
+    clean()
     cantidad = cantidad_listas()
+    datos = datos_listas(cantidad)
+    datos = calculo_desviacion(datos)
+    datos_ordenados = ordenar_datos(datos)
+    imprimir(datos_ordenados)
+    print("\n================================================================================")
+    continuar = input("¿Desea continuar? Si/No 1/0 S/N Y/N: ")
+    if continuar.lower() in ("si", "1", "s", "y"):
+        main()
+    else:
+        clean()
+        print("Programa finalizado")
 
 if __name__ == "__main__":
     main()
