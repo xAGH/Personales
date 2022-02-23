@@ -28,5 +28,27 @@ def verificar_numero(num: str or int):
     Return:
         - bool -> Válido o no para seguir con el programa.
     """
-    return False if not str(num).isdigit() else True
+    try:
+        int(num)
+        verificacion = True
+    except ValueError:
+        verificacion = False
+
+    finally:
+        return verificacion
     
+
+def numero_es(num: int) -> str:
+    """
+    Función que dice si un número es positivo o negativo y par o impar.
+    Recibe:
+        num: int -> Número a saber su signo y si es par o no.
+    Retorna:
+        resultado: str -> Mensaje del resultado.
+    """
+    if verificar_numero(num):
+        resultado = f"El número {int(num)} es {par_impar(int(num))} y es {positivo_negativo(int(num))}"
+    else:
+        resultado = f"{num} no es un número entero."
+    
+    return resultado

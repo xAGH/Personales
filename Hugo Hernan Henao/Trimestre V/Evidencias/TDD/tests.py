@@ -1,12 +1,9 @@
 # Importación de librerías.
-from programas.numeros import *
-from programas.parqueadero import *
-from programas.supermercado import *
-from programas.edades import *
+from programas import contemporaneos, numeros, parqueadero, supermercado
 import random
 
 class Test:
-    def numeros(self: object, numero: int = None):
+    def numeros(self: object, metodo: int, numero: int = None):
         """
         Método para testear las funciones del programa #1:
         Verificar si un número es par o impar y si este es positivo o negativo.
@@ -18,22 +15,13 @@ class Test:
                     o si el valor ingresado no es un número entero o error.
         """
         # Se valida si no se entran parámetros
-        if numero is None:
+        if metodo == 1:
             # Si no entran parámetros, se escojen números aleatorios.
             numero = random.randint(-1000, 1000)
-
-        # Se llaman las funciones respectivas
-        if verificar_numero(numero):
-            numero_es = par_impar(numero)
-            numero_signo = positivo_negativo(numero)
-            # Se retorna un resultado
-            resultado = f"El número {numero} es {numero_es} y es {numero_signo}"
-        else:
-            resultado = f"El valor no es válido, {numero} no es un valor entero"
         
-        return resultado
+        return numeros.numero_es(numero)
 
-    def parqueadero(self: object, tiempo: str = None):
+    def parqueadero(self: object, metodo: int, tiempo: str = None, file: str = None):
         """
         Método para testear las funciones del programa #2:
         Calcular cuanto paga un vehivulo por estacionar en un parqueadero segun las horas
@@ -44,12 +32,26 @@ class Test:
         Retorna:
             - str -> Cadena que dice si el valor a pagar por el servicio del parqueadero o error.
         """
-        # Se valida si no se entran parámetros
-        if tiempo is None:
-            # Si no entran parámetros, se escojen tiempos aleatorios.
+        if metodo == 1:
             tiempo = ""
             for i in range(2):
                 tiempo += str(random.randint(0, 100))
                 tiempo += ":" if i == 0 else ""
-        retorno = calculo_valor(tiempo)
-        return f"Por {retorno[1]} horas y {retorno[2]} minutos debe pagar un valor de ${retorno[0]} pesos." if retorno else "El formato de tiempo no es válido."
+                
+        return parqueadero.calculo_valor(tiempo)
+
+    def edades(self: object, metodo: int, edades: tuple = None, nombres: tuple = None):
+        if metodo == 1:
+            nombres = ("Juan", "Mario", "Pedro")
+            edades = []
+            for i in range(3):
+                edades.append(random.randint(1, 100))
+
+            return contemporaneos.comprobar_contemporaneos(edades, nombres)
+            
+            
+
+
+test = Test()
+
+print(test.edades(1))
