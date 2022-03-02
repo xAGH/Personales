@@ -98,18 +98,38 @@ class Tester():
 
         elif metodo == 2:
             nombre = input("Ingrese el nombre del archivo: ")
-            try:
-                with open(f"./archivos/{nombre}.txt", "r") as file:
-                    tiempos = []
-                    for i in file:
-                        dato = i.replace("\n","").replace(" ", ";").split(";")
-                        tiempos = tiempos + dato
-                    while True:
+            nombres = ("Juan", "Mario", "Pedro")
+            
+            with open(f"./archivos/{nombre}.txt", "r") as file:
+                edades = []
+                for i in file:
+                    dato = i.replace("\n","").replace(" ", ";").split(";")
+                    edades = edades + dato
+                while True:
+                    try:
+                        edades.remove("")
+                    except:
+                        break
+                i = 0
+                while i < len(edades):
+                    try:
+                        datos = (edades[i], edades[i+1], edades[i+2])
+                    except:
                         try:
-                            tiempos.remove("")
+                            datos = (edades[i], edades[i+1])
                         except:
-                            break
-                    for i in tiempos:
-                        print(parqueadero.calculo_valor(i))
-            except:
-                print("No se ha encontrado el archivo")
+                            datos = (edades[i])
+                    finally:
+                        print(contemporaneos.comprobar_contemporaneos(datos, nombres))
+                        i += 3
+
+        elif metodo == 3:
+            nombres = []
+            edades = []
+
+            for i in range(3):
+                nombre_persona = input("Ingrese el nombre #1: ")
+                nombres.append(nombre_persona)
+                edades.append(input(f"Ingrese la edad de {nombre_persona}: "))
+
+            print(contemporaneos.comprobar_contemporaneos(edades, nombres))

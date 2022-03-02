@@ -39,7 +39,8 @@ def comprobar_contemporaneos(edades: tuple,
         edad1 = edades[0]
         edad2 = edades[1]
         edad3 = edades[2]
-        articulo = lambda x: "años" if x > 1 else "año"
+        articulo = lambda x: "años" if int(x) > 1 else "año"
+        print(f"{tuple(edades)}")
         if edad1 == edad2 and edad2 == edad3:
             contemporaneos = f"{nombres[0]}, {nombres[1]} y {nombres[2]} son contemporáneos. Ya que tienen {edad1} {articulo(edad1)}"
         elif edad1 == edad2:

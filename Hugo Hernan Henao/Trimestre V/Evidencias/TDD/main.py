@@ -3,4 +3,4 @@ from tests import Tester
 
 testeo = Tester()
 
-testeo.parqueadero(3)
+testeo.edades(3)
