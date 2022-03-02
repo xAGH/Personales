@@ -78,9 +78,51 @@ class Tester():
             tiempo = input("Ingrese el tiempo en formato hh:mm donde hh son horas y mm minutos: ")
             print(parqueadero.calculo_valor(tiempo))
 
-    def edades(self: object, metodo: int):
+    def supermercado(self: object, metodo: int):
         """
         Método para testear las funciones del programa #3:
+        Programa que ofrece un descuento y un obsequio dependiendo de las docenas compradas.
+        Recibe:
+            - self: object -> Objeto que está llamando al método.
+            - metodo: int -> Forma de pasar los datos al programa. (1=Aleatorio, 2=Archivo, 3=Manual)
+        Retorna:
+            - str -> Cadena que dice el valor a pagar, el descento obtenido y el obsequio o error.
+        """
+        if metodo == 1:
+            cantidad = random.randint(1, 500)
+            precio = random.uniform(1, 10000)
+            print(supermercado.total(cantidad, precio))
+
+        elif metodo == 2:
+            nombre = input("Ingrese el nombre del archivo: ")
+            
+            with open(f"./archivos/{nombre}.txt", "r") as file:
+                supermer = []
+                for i in file:
+                    dato = i.replace("\n","").replace(" ", ";").split(";")
+                    supermer = supermer + dato
+                while True:
+                    try:
+                        supermer.remove("")
+                    except:
+                        break
+                i = 0
+                while i < len(supermer):
+                    
+                        print(supermercado.total(supermer[i], supermer[i+1]))
+                    
+                        print("Los datos no son suficientes.")
+                   
+
+        elif metodo == 3:
+            v_unitario = input("Ingrese el valor unitario del producto: ")
+            cantidad = input("Cantidad de productos: ")
+
+            print(supermercado.total(v_unitario, cantidad))
+
+    def edades(self: object, metodo: int):
+        """
+        Método para testear las funciones del programa #4:
         Programa que recibe 3 edades de 3 personas y dice si todos, algunos o ninguno de ellos son
         contemporáneos.
         Recibe:
@@ -127,8 +169,8 @@ class Tester():
             nombres = []
             edades = []
 
-            for i in range(3):
-                nombre_persona = input("Ingrese el nombre #1: ")
+            for i in range(1,4):
+                nombre_persona = input(f"Ingrese el nombre #{i}: ")
                 nombres.append(nombre_persona)
                 edades.append(input(f"Ingrese la edad de {nombre_persona}: "))
 
