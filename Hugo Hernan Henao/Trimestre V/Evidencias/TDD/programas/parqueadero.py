@@ -69,8 +69,10 @@ def calculo_valor(tiempo: str,
         tiempo_m = abs(float(tiempo[1]))
         horas, minutos = exceso_minutos(tiempo_h, tiempo_m)
         calculo = formatear_calculo(horas * valor_h + minutos * valor_m)
-        resultado = f"Por {horas} horas y {minutos} minutos debe pagar un valor de ${calculo} pesos."
+        hora_s = lambda x: "horas" if x != 1 else "hora"
+        minutos_s = lambda x: "minutos" if x != 1 else "minuto"
+        resultado = f"Por {int(horas)} {hora_s(horas)} y {int(minutos)} {minutos_s(minutos)} debe pagar un valor de ${calculo} pesos."
     except:
-        resultado = "El formato de tiempo no es válido."
+        resultado = f"El formato de tiempo no es válido. ({tiempo})"
 
     return resultado

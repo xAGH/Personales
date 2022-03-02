@@ -1,4 +1,6 @@
 # Este archivo se encarga de orquestar y permitir al cliente ejecutar las pruebas
+from tests import Tester
 
-if __name__ == '__main__':
-    pass
+testeo = Tester()
+
+testeo.parqueadero(3)
