@@ -1,0 +1,13 @@
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\MenuMatematico\bin\Debug\netcoreapp3.1\MenuMatematico.exe
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\MenuMatematico\bin\Debug\netcoreapp3.1\MenuMatematico.deps.json
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\MenuMatematico\bin\Debug\netcoreapp3.1\MenuMatematico.runtimeconfig.json
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\MenuMatematico\bin\Debug\netcoreapp3.1\MenuMatematico.runtimeconfig.dev.json
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\MenuMatematico\bin\Debug\netcoreapp3.1\MenuMatematico.dll
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\MenuMatematico\bin\Debug\netcoreapp3.1\MenuMatematico.pdb
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\MenuMatematico\obj\Debug\netcoreapp3.1\MenuMatematico.csprojAssemblyReference.cache
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\MenuMatematico\obj\Debug\netcoreapp3.1\MenuMatematico.AssemblyInfoInputs.cache
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\MenuMatematico\obj\Debug\netcoreapp3.1\MenuMatematico.AssemblyInfo.cs
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\MenuMatematico\obj\Debug\netcoreapp3.1\MenuMatematico.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\MenuMatematico\obj\Debug\netcoreapp3.1\MenuMatematico.dll
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\MenuMatematico\obj\Debug\netcoreapp3.1\MenuMatematico.pdb
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\MenuMatematico\obj\Debug\netcoreapp3.1\MenuMatematico.genruntimeconfig.cache

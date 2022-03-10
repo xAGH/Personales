@@ -1,0 +1,13 @@
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Consola1\obj\Debug\netcoreapp3.1\Consola1.csprojAssemblyReference.cache
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Consola1\obj\Debug\netcoreapp3.1\Consola1.AssemblyInfoInputs.cache
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Consola1\obj\Debug\netcoreapp3.1\Consola1.AssemblyInfo.cs
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Consola1\obj\Debug\netcoreapp3.1\Consola1.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Consola1\bin\Debug\netcoreapp3.1\Consola1.exe
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Consola1\bin\Debug\netcoreapp3.1\Consola1.deps.json
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Consola1\bin\Debug\netcoreapp3.1\Consola1.runtimeconfig.json
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Consola1\bin\Debug\netcoreapp3.1\Consola1.runtimeconfig.dev.json
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Consola1\bin\Debug\netcoreapp3.1\Consola1.dll
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Consola1\bin\Debug\netcoreapp3.1\Consola1.pdb
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Consola1\obj\Debug\netcoreapp3.1\Consola1.dll
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Consola1\obj\Debug\netcoreapp3.1\Consola1.pdb
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Consola1\obj\Debug\netcoreapp3.1\Consola1.genruntimeconfig.cache
