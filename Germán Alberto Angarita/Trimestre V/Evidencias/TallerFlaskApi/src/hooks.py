@@ -2,7 +2,6 @@ from flask import request, make_response, jsonify
 from functools import wraps
 from os import getenv
 from jwt import decode, DecodeError, InvalidTokenError, InvalidKeyError
-from werkzeug.exceptions import RequestTimeout
 
 # Hook para verificar token.
 def verify_token(func):
@@ -10,21 +9,11 @@ def verify_token(func):
     def wrapped(*args, **kwargs):
         token: str = request.headers.get('Authorization', 'Auth')
         try:
-            data = decode(token, getenv("JWT_SECRET_KEY"), algorithms=["HS256"])
-        except DecodeError:
+            decode(token, getenv("JWT_KEY"), ["HS256"])
+        except:
             return make_response(jsonify({
-                "statusCode": 401,
+                "statusCode": 498,
                 "message": "Token is missing or invalid"
-            }), 401)
-        except InvalidTokenError:
-            return make_response(jsonify({
-                "statusCode": 401,
-                "message": "Invalid token error"
-            }), 401)
-        except InvalidKeyError:
-            return make_response(jsonify({
-                "statusCode": 401,
-                "message": "Invalid signature error, can't to read"
-            }), 401)
+            }), 498)
         return func(*args, **kwargs)
     return wrapped
