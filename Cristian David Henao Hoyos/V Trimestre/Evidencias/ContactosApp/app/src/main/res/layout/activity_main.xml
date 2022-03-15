@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nuevoContactoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Contacto"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.060"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.020" />
+
+    <EditText
+        android:id="@+id/nombresInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:hint="Nombres y apellidos"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nuevoContactoText"
+        app:layout_constraintVertical_bias="0.030" />
+
+    <EditText
+        android:id="@+id/celularInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:hint="Teléfono celular"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.060"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombresInput"
+        app:layout_constraintVertical_bias="0.030" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.060"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/celularInput"
+        app:layout_constraintVertical_bias="0.030" />
+
+    <TextView
+        android:id="@+id/generoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Género"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailInput"
+        app:layout_constraintVertical_bias="0.030" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generoText"
+        app:layout_constraintVertical_bias="0.030">
+
+        <RadioButton
+            android:id="@+id/generoRadioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20sp"
+            android:text="Masculino"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/generoRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femenino"
+            android:textSize="14sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/interesesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione sus temas de interés"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.020" />
+
+    <CheckBox
+        android:id="@+id/redesCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redes Sociales"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interesesText"
+        app:layout_constraintVertical_bias="0.020" />
+
+    <CheckBox
+        android:id="@+id/videojuegosCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video Juegos"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redesCheckBox"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <CheckBox
+        android:id="@+id/programacionCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programación"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videojuegosCheckBox"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <CheckBox
+        android:id="@+id/bdCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bases de datos"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/programacionCheckBox"
+        app:layout_constraintVertical_bias="0.03" />
+
+
+    <TextView
+        android:id="@+id/resumenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Ver resumen antes de guardar?"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bdCheckBox"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <ToggleButton
+        android:id="@+id/resumentoggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="No"
+        android:textOn="Si"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toEndOf="@+id/resumenText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <Button
+        android:id="@+id/guardarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resumenText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
