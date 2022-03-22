@@ -1,5 +1,5 @@
 from flask import Flask
-from src.routes import auth
+from src.routes import routes
 
 class Aplication():
 
@@ -18,4 +18,8 @@ class Aplication():
     @classmethod
     def __register_routes(cls):
         # Registro de rutas
-        cls.app.add_url_rule(auth["register"], view_func=auth["register_controller"], methods=["POST"])
+        cls.app.add_url_rule(routes["register"], view_func=routes["register_controller"], methods=["POST"])
+        cls.app.add_url_rule(routes["login"], view_func=routes["login_controller"], methods=["POST"])
+        cls.app.add_url_rule(routes["productos"], view_func=routes["productos_controller"], methods=["GET"])
+        cls.app.add_url_rule(routes["compras"], view_func=routes["compras_controller"], methods=["POST"])
+        
