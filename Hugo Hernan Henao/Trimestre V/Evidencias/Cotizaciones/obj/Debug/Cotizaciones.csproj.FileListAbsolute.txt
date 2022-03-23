@@ -1,0 +1,10 @@
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Cotizaciones\bin\Debug\Cotizaciones.exe.config
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Cotizaciones\bin\Debug\Cotizaciones.exe
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Cotizaciones\bin\Debug\Cotizaciones.pdb
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Cotizaciones\obj\Debug\Cotizaciones.csprojAssemblyReference.cache
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Cotizaciones\obj\Debug\Cotizaciones.Properties.Resources.resources
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Cotizaciones\obj\Debug\Cotizaciones.csproj.GenerateResource.cache
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Cotizaciones\obj\Debug\Cotizaciones.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Cotizaciones\obj\Debug\Cotizaciones.exe
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Cotizaciones\obj\Debug\Cotizaciones.pdb
+C:\Users\SENA\Documents\Alejo 2236347\Hugo\C#\Cotizaciones\obj\Debug\Cotizaciones.CotizacionesForm.resources
