@@ -1,0 +1,759 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="listBox1.Items" xml:space="preserve">
+    <value>+ Cuerpo</value>
+  </data>
+  <data name="listBox1.Items1" xml:space="preserve">
+    <value>+ Titulo</value>
+  </data>
+  <data name="listBox1.Items2" xml:space="preserve">
+    <value>Abadi MT Condensed Light</value>
+  </data>
+  <data name="listBox1.Items3" xml:space="preserve">
+    <value>Aharoni</value>
+  </data>
+  <data name="listBox1.Items4" xml:space="preserve">
+    <value>Aldhabi</value>
+  </data>
+  <data name="listBox1.Items5" xml:space="preserve">
+    <value>Andalus</value>
+  </data>
+  <data name="listBox1.Items6" xml:space="preserve">
+    <value>Angsana New</value>
+  </data>
+  <data name="listBox1.Items7" xml:space="preserve">
+    <value>AngsanaUPC</value>
+  </data>
+  <data name="listBox1.Items8" xml:space="preserve">
+    <value>Aparajita</value>
+  </data>
+  <data name="listBox1.Items9" xml:space="preserve">
+    <value>Arabic Typesetting</value>
+  </data>
+  <data name="listBox1.Items10" xml:space="preserve">
+    <value>Arial Black</value>
+  </data>
+  <data name="listBox1.Items11" xml:space="preserve">
+    <value>Arial Nova</value>
+  </data>
+  <data name="listBox1.Items12" xml:space="preserve">
+    <value>Batang</value>
+  </data>
+  <data name="listBox1.Items13" xml:space="preserve">
+    <value>BatangChe</value>
+  </data>
+  <data name="listBox1.Items14" xml:space="preserve">
+    <value>Browallia New</value>
+  </data>
+  <data name="listBox1.Items15" xml:space="preserve">
+    <value>BrowalliaUPC</value>
+  </data>
+  <data name="listBox1.Items16" xml:space="preserve">
+    <value>Calibri Light</value>
+  </data>
+  <data name="listBox1.Items17" xml:space="preserve">
+    <value>Calisto MT</value>
+  </data>
+  <data name="listBox1.Items18" xml:space="preserve">
+    <value>Cambria</value>
+  </data>
+  <data name="listBox1.Items19" xml:space="preserve">
+    <value>Cambria Math</value>
+  </data>
+  <data name="listBox1.Items20" xml:space="preserve">
+    <value>Constantia</value>
+  </data>
+  <data name="listBox1.Items21" xml:space="preserve">
+    <value>Copperplate Gothic Bold</value>
+  </data>
+  <data name="listBox1.Items22" xml:space="preserve">
+    <value>Copperplate Gothic Light</value>
+  </data>
+  <data name="listBox1.Items23" xml:space="preserve">
+    <value>Corbel</value>
+  </data>
+  <data name="listBox1.Items24" xml:space="preserve">
+    <value>Cordia New</value>
+  </data>
+  <data name="listBox1.Items25" xml:space="preserve">
+    <value>CordiaUPC</value>
+  </data>
+  <data name="listBox1.Items26" xml:space="preserve">
+    <value>DaunPenh</value>
+  </data>
+  <data name="listBox1.Items27" xml:space="preserve">
+    <value>David</value>
+  </data>
+  <data name="listBox1.Items28" xml:space="preserve">
+    <value>Dengxian</value>
+  </data>
+  <data name="listBox1.Items29" xml:space="preserve">
+    <value>DFKai-SB</value>
+  </data>
+  <data name="listBox1.Items30" xml:space="preserve">
+    <value>DilleniaUPC</value>
+  </data>
+  <data name="listBox1.Items31" xml:space="preserve">
+    <value>DokChampa</value>
+  </data>
+  <data name="listBox1.Items32" xml:space="preserve">
+    <value>Dotum</value>
+  </data>
+  <data name="listBox1.Items33" xml:space="preserve">
+    <value>DotumChe</value>
+  </data>
+  <data name="listBox1.Items34" xml:space="preserve">
+    <value>Ebrima</value>
+  </data>
+  <data name="listBox1.Items35" xml:space="preserve">
+    <value>Estrangelo Edessa</value>
+  </data>
+  <data name="listBox1.Items36" xml:space="preserve">
+    <value>EucrosiaUPC</value>
+  </data>
+  <data name="listBox1.Items37" xml:space="preserve">
+    <value>Euphemia</value>
+  </data>
+  <data name="listBox1.Items38" xml:space="preserve">
+    <value>FangSong</value>
+  </data>
+  <data name="listBox1.Items39" xml:space="preserve">
+    <value>Franklin Gothic Medium</value>
+  </data>
+  <data name="listBox1.Items40" xml:space="preserve">
+    <value>FrankRuehl</value>
+  </data>
+  <data name="listBox1.Items41" xml:space="preserve">
+    <value>FreesiaUPC</value>
+  </data>
+  <data name="listBox1.Items42" xml:space="preserve">
+    <value>Gabriola</value>
+  </data>
+  <data name="listBox1.Items43" xml:space="preserve">
+    <value>Gadugi</value>
+  </data>
+  <data name="listBox1.Items44" xml:space="preserve">
+    <value>Gautami</value>
+  </data>
+  <data name="listBox1.Items45" xml:space="preserve">
+    <value>Georgia</value>
+  </data>
+  <data name="listBox1.Items46" xml:space="preserve">
+    <value>Georgia Pro</value>
+  </data>
+  <data name="listBox1.Items47" xml:space="preserve">
+    <value>Gill Sans Nova</value>
+  </data>
+  <data name="listBox1.Items48" xml:space="preserve">
+    <value>Gisha</value>
+  </data>
+  <data name="listBox1.Items49" xml:space="preserve">
+    <value>Gulim</value>
+  </data>
+  <data name="listBox1.Items50" xml:space="preserve">
+    <value>GulimChe</value>
+  </data>
+  <data name="listBox1.Items51" xml:space="preserve">
+    <value>Gungsuh</value>
+  </data>
+  <data name="listBox1.Items52" xml:space="preserve">
+    <value>GungsuhChe</value>
+  </data>
+  <data name="listBox1.Items53" xml:space="preserve">
+    <value>Impact</value>
+  </data>
+  <data name="listBox1.Items54" xml:space="preserve">
+    <value>IrisUPC</value>
+  </data>
+  <data name="listBox1.Items55" xml:space="preserve">
+    <value>Iskoola Pota</value>
+  </data>
+  <data name="listBox1.Items56" xml:space="preserve">
+    <value>JasmineUPC</value>
+  </data>
+  <data name="listBox1.Items57" xml:space="preserve">
+    <value>KaiTi</value>
+  </data>
+  <data name="listBox1.Items58" xml:space="preserve">
+    <value>Kalinga</value>
+  </data>
+  <data name="listBox1.Items59" xml:space="preserve">
+    <value>Kartika</value>
+  </data>
+  <data name="listBox1.Items60" xml:space="preserve">
+    <value>Khmer UI</value>
+  </data>
+  <data name="listBox1.Items61" xml:space="preserve">
+    <value>KodchiangUPC</value>
+  </data>
+  <data name="listBox1.Items62" xml:space="preserve">
+    <value>Kokila</value>
+  </data>
+  <data name="listBox1.Items63" xml:space="preserve">
+    <value>Lao UI</value>
+  </data>
+  <data name="listBox1.Items64" xml:space="preserve">
+    <value>Latha</value>
+  </data>
+  <data name="listBox1.Items65" xml:space="preserve">
+    <value>Leelawadee</value>
+  </data>
+  <data name="listBox1.Items66" xml:space="preserve">
+    <value>Leelawadee UI</value>
+  </data>
+  <data name="listBox1.Items67" xml:space="preserve">
+    <value>Levenim MT</value>
+  </data>
+  <data name="listBox1.Items68" xml:space="preserve">
+    <value>LilyUPC</value>
+  </data>
+  <data name="listBox1.Items69" xml:space="preserve">
+    <value>Lucida Handwriting Italic</value>
+  </data>
+  <data name="listBox1.Items70" xml:space="preserve">
+    <value>Lucida Sans Unicode</value>
+  </data>
+  <data name="listBox1.Items71" xml:space="preserve">
+    <value>Mangal</value>
+  </data>
+  <data name="listBox1.Items72" xml:space="preserve">
+    <value>Manny ITC</value>
+  </data>
+  <data name="listBox1.Items73" xml:space="preserve">
+    <value>Marlett</value>
+  </data>
+  <data name="listBox1.Items74" xml:space="preserve">
+    <value>Meiryo UI</value>
+  </data>
+  <data name="listBox1.Items75" xml:space="preserve">
+    <value>Microsoft Himalaya</value>
+  </data>
+  <data name="listBox1.Items76" xml:space="preserve">
+    <value>Microsoft JhengHei</value>
+  </data>
+  <data name="listBox1.Items77" xml:space="preserve">
+    <value>Microsoft JhengHei UI</value>
+  </data>
+  <data name="listBox1.Items78" xml:space="preserve">
+    <value>Microsoft New Tai Lue</value>
+  </data>
+  <data name="listBox1.Items79" xml:space="preserve">
+    <value>Microsoft PhagsPa</value>
+  </data>
+  <data name="listBox1.Items80" xml:space="preserve">
+    <value>Microsoft Sans Serif</value>
+  </data>
+  <data name="listBox1.Items81" xml:space="preserve">
+    <value>Microsoft Tai Le</value>
+  </data>
+  <data name="listBox1.Items82" xml:space="preserve">
+    <value>Microsoft Uighur</value>
+  </data>
+  <data name="listBox1.Items83" xml:space="preserve">
+    <value>Microsoft YaHei</value>
+  </data>
+  <data name="listBox1.Items84" xml:space="preserve">
+    <value>Microsoft YaHei UI</value>
+  </data>
+  <data name="listBox1.Items85" xml:space="preserve">
+    <value>Microsoft Yi Baiti</value>
+  </data>
+  <data name="listBox1.Items86" xml:space="preserve">
+    <value>MingLiU, PMingLiU</value>
+  </data>
+  <data name="listBox1.Items87" xml:space="preserve">
+    <value>MingLiU-ExtB, PMingLiU-ExtB</value>
+  </data>
+  <data name="listBox1.Items88" xml:space="preserve">
+    <value>MingLiU_HKSCS</value>
+  </data>
+  <data name="listBox1.Items89" xml:space="preserve">
+    <value>MingLiU_HKSCS-ExtB</value>
+  </data>
+  <data name="listBox1.Items90" xml:space="preserve">
+    <value>Miriam, Miriam Fixed</value>
+  </data>
+  <data name="listBox1.Items91" xml:space="preserve">
+    <value>Mongolian Baiti</value>
+  </data>
+  <data name="listBox1.Items92" xml:space="preserve">
+    <value>MoolBoran</value>
+  </data>
+  <data name="listBox1.Items93" xml:space="preserve">
+    <value>MS Gothic, MS PGothic</value>
+  </data>
+  <data name="listBox1.Items94" xml:space="preserve">
+    <value>MS Mincho, MS PMincho</value>
+  </data>
+  <data name="listBox1.Items95" xml:space="preserve">
+    <value>MS UI Gothic</value>
+  </data>
+  <data name="listBox1.Items96" xml:space="preserve">
+    <value>MV Boli</value>
+  </data>
+  <data name="listBox1.Items97" xml:space="preserve">
+    <value>Myanmar Text</value>
+  </data>
+  <data name="listBox1.Items98" xml:space="preserve">
+    <value>Narkisim</value>
+  </data>
+  <data name="listBox1.Items99" xml:space="preserve">
+    <value>Neue Haas Grotesk Text Pro</value>
+  </data>
+  <data name="listBox1.Items100" xml:space="preserve">
+    <value>News Gothic MT</value>
+  </data>
+  <data name="listBox1.Items101" xml:space="preserve">
+    <value>Nirmala UI</value>
+  </data>
+  <data name="listBox1.Items102" xml:space="preserve">
+    <value>NSimSun</value>
+  </data>
+  <data name="listBox1.Items103" xml:space="preserve">
+    <value>Nyala</value>
+  </data>
+  <data name="listBox1.Items104" xml:space="preserve">
+    <value>Plantagenet Cherokee</value>
+  </data>
+  <data name="listBox1.Items105" xml:space="preserve">
+    <value>Raavi</value>
+  </data>
+  <data name="listBox1.Items106" xml:space="preserve">
+    <value>Rockwell Nova</value>
+  </data>
+  <data name="listBox1.Items107" xml:space="preserve">
+    <value>Rod</value>
+  </data>
+  <data name="listBox1.Items108" xml:space="preserve">
+    <value>Sakkal Majalla</value>
+  </data>
+  <data name="listBox1.Items109" xml:space="preserve">
+    <value>Sanskrit Text</value>
+  </data>
+  <data name="listBox1.Items110" xml:space="preserve">
+    <value>Segoe MDL2 Assets</value>
+  </data>
+  <data name="listBox1.Items111" xml:space="preserve">
+    <value>Segoe Print</value>
+  </data>
+  <data name="listBox1.Items112" xml:space="preserve">
+    <value>Segoe Script</value>
+  </data>
+  <data name="listBox1.Items113" xml:space="preserve">
+    <value>Segoe UI Symbol</value>
+  </data>
+  <data name="listBox1.Items114" xml:space="preserve">
+    <value>Shonar Bangla</value>
+  </data>
+  <data name="listBox1.Items115" xml:space="preserve">
+    <value>Shruti</value>
+  </data>
+  <data name="listBox1.Items116" xml:space="preserve">
+    <value>SimHei</value>
+  </data>
+  <data name="listBox1.Items117" xml:space="preserve">
+    <value>SimKai</value>
+  </data>
+  <data name="listBox1.Items118" xml:space="preserve">
+    <value>Simplified Arabic</value>
+  </data>
+  <data name="listBox1.Items119" xml:space="preserve">
+    <value>SimSun</value>
+  </data>
+  <data name="listBox1.Items120" xml:space="preserve">
+    <value>SimSun-ExtB</value>
+  </data>
+  <data name="listBox1.Items121" xml:space="preserve">
+    <value>Sitka Banner</value>
+  </data>
+  <data name="listBox1.Items122" xml:space="preserve">
+    <value>Sitka Display</value>
+  </data>
+  <data name="listBox1.Items123" xml:space="preserve">
+    <value>Sitka Heading</value>
+  </data>
+  <data name="listBox1.Items124" xml:space="preserve">
+    <value>Sitka Small</value>
+  </data>
+  <data name="listBox1.Items125" xml:space="preserve">
+    <value>Sitka Subheading</value>
+  </data>
+  <data name="listBox1.Items126" xml:space="preserve">
+    <value>Sitka Text</value>
+  </data>
+  <data name="listBox1.Items127" xml:space="preserve">
+    <value>Sylfaen</value>
+  </data>
+  <data name="listBox1.Items128" xml:space="preserve">
+    <value>Symbol</value>
+  </data>
+  <data name="listBox1.Items129" xml:space="preserve">
+    <value>Tahoma</value>
+  </data>
+  <data name="listBox1.Items130" xml:space="preserve">
+    <value>Traditional Arabic</value>
+  </data>
+  <data name="listBox1.Items131" xml:space="preserve">
+    <value>Tunga</value>
+  </data>
+  <data name="listBox1.Items132" xml:space="preserve">
+    <value>Urdu Typesetting</value>
+  </data>
+  <data name="listBox1.Items133" xml:space="preserve">
+    <value>Utsaah</value>
+  </data>
+  <data name="listBox1.Items134" xml:space="preserve">
+    <value>Vani</value>
+  </data>
+  <data name="listBox1.Items135" xml:space="preserve">
+    <value>Verdana Pro</value>
+  </data>
+  <data name="listBox1.Items136" xml:space="preserve">
+    <value>Vijaya</value>
+  </data>
+  <data name="listBox1.Items137" xml:space="preserve">
+    <value>Vrinda</value>
+  </data>
+  <data name="listBox1.Items138" xml:space="preserve">
+    <value>Westminster</value>
+  </data>
+  <data name="listBox1.Items139" xml:space="preserve">
+    <value>Yu Gothic</value>
+  </data>
+  <data name="listBox1.Items140" xml:space="preserve">
+    <value>Yu Gothic UI</value>
+  </data>
+  <data name="listBox1.Items141" xml:space="preserve">
+    <value>Yu Mincho</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="listBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 70</value>
+  </data>
+  <data name="listBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 95</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="listBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Name" xml:space="preserve">
+    <value>listBox1</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Parent" xml:space="preserve">
+    <value>Fuente</value>
+  </data>
+  <data name="&gt;&gt;listBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>386, 40</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Tamaño:</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>Fuente</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 40</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Estilo de fuente:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>Fuente</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 40</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Fuente:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>Fuente</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Fuente.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="Fuente.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="Fuente.Size" type="System.Drawing.Size, System.Drawing">
+    <value>513, 469</value>
+  </data>
+  <data name="Fuente.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Fuente.Text" xml:space="preserve">
+    <value>Fuente</value>
+  </data>
+  <data name="&gt;&gt;Fuente.Name" xml:space="preserve">
+    <value>Fuente</value>
+  </data>
+  <data name="&gt;&gt;Fuente.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Fuente.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;Fuente.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Avanzado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="Avanzado.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="Avanzado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>513, 469</value>
+  </data>
+  <data name="Avanzado.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Avanzado.Text" xml:space="preserve">
+    <value>Avanzado</value>
+  </data>
+  <data name="&gt;&gt;Avanzado.Name" xml:space="preserve">
+    <value>Avanzado</value>
+  </data>
+  <data name="&gt;&gt;Avanzado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Avanzado.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;Avanzado.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>521, 495</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>545, 560</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Fuente</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>VentanaPrincipal</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
