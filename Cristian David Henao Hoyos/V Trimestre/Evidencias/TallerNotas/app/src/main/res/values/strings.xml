@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Taller Notas</string>
+    <string name="bienvenida">Bienvenido</string>
+    <string name="app_icon">App Icon</string>
+    <string name="registro">Registro</string>
+    <string name="estadisticas">Estadísticas</string>
+    <string name="instrucciones">Instrucciones</string>
+</resources>
