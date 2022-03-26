@@ -1,19 +1,54 @@
 package com.example.tallernotas
 
+import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
-import android.view.Window
-import android.view.WindowManager
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val window: Window = this.window
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-        this.resources.getColor(android.R.color.transparent).also { window.statusBarColor = it }
-        this.resources.getColor(android.R.color.transparent).also { window.navigationBarColor = it }
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+
+        val appSettingsPrefs: SharedPreferences = getSharedPreferences("AppSettingPrefs", 0)
+        val sharedPrefsEdit: SharedPreferences.Editor = appSettingsPrefs.edit()
+        val isNightModeOn: Boolean = appSettingsPrefs.getBoolean("NightMode", false)
+
+        val theme: MaterialButton = findViewById(R.id.themeButton)
+        if (isNightModeOn) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            theme.text = getText(R.string.sun)
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            theme.text = getText(R.string.moon)
+        }
+
+        theme.setOnClickListener(View.OnClickListener {
+            if (isNightModeOn) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                sharedPrefsEdit.putBoolean("NightMode", false)
+                sharedPrefsEdit.apply()
+
+                theme.text = getText(R.string.moon)
+                restartApp()
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                sharedPrefsEdit.putBoolean("NightMode", true)
+                sharedPrefsEdit.apply()
+
+                theme.text = getText(R.string.sun)
+                restartApp()
+            }
+        })
+    }
+
+    private fun restartApp(){
+        val i: Intent = Intent(this, MainActivity::class.java)
+        startActivity(i)
+        finish()
     }
 }
