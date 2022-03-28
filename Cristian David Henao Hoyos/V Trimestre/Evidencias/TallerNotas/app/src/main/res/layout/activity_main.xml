@@ -8,30 +8,23 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/themeButton"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:id="@+id/btnTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:background="@android:color/transparent"
-        android:textSize="25sp" />
+        style="@style/ChangeThemeButton"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
         android:textColor="?attr/colorOnPrimary"
         android:text="@string/bienvenida"
         android:shadowColor="?attr/colorPrimaryVariant"
         android:shadowDx="0"
-        android:shadowDy="4"
+        android:shadowDy="2"
         android:shadowRadius="5"
         android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginBottom="60dp"
         />
 
@@ -43,35 +36,31 @@
         app:srcCompat="@drawable/bookicon" />
 
     <com.google.android.material.button.MaterialButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnRegistro"
         android:rotation="3"
         android:text="@string/registro"
         app:icon="@drawable/registro_icon"
-        style="@style/ButtonStyle"
+        style="@style/MenuButtonStyle"
         app:iconGravity="end"
         />
 
     <com.google.android.material.button.MaterialButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnEstadicticas"
         android:rotation="-3"
         android:text="@string/estadisticas"
         app:icon="@drawable/estadisticas_icon"
-        style="@style/ButtonStyle"
+        style="@style/MenuButtonStyle"
         app:iconGravity="start"
         />
 
     <com.google.android.material.button.MaterialButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnInstrucciones"
         android:layout_gravity="center"
         android:text="@string/instrucciones"
         android:rotation="3"
         app:icon="@drawable/instrucciones_icon"
-        style="@style/ButtonStyle"
+        style="@style/MenuButtonStyle"
         app:iconGravity="end"
         />
-
 
 </android.widget.LinearLayout>

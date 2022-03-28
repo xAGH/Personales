@@ -1,14 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button.Icon">
+    <style name="MenuButtonStyle" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_marginTop">50dp</item>
         <item name="android:textSize">25sp</item>
         <item name="cornerRadius">5dp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
     </style>
 
     <style name="WindowAnimationTransition">
         <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
         <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="SplashTheme" parent="@style/Theme.TallerNotas">
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+    </style>
+
+    <style name="ChangeThemeButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textSize">25sp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:minWidth">1dp</item>
+    </style>
+
+    <style name="CommonCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="TextViewMateria">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="EditTextNota">
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:textAlignment">center</item>
     </style>
 </resources>

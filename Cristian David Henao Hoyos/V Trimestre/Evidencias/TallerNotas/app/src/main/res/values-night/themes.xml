@@ -12,7 +12,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
         <!-- Customize your theme here. -->
-        <item name="android:background">@color/background_d</item>
+        <item name="android:windowBackground">@color/background_d</item>
         <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+        <item name="cardBackgroundColor">@color/cardBackground_d</item>
     </style>
 </resources>

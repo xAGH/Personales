@@ -2,19 +2,21 @@
 <resources>
     <!-- Colores de la aplicación en modo claro -->
     <color name="background_l">#EFEFEF</color>
-    <color name="primary_l">#00FFCD</color>
-    <color name="primaryVariant_l">#00D8AD</color>
+    <color name="primary_l">#40C800</color>
+    <color name="primaryVariant_l">#3FC103</color>
     <color name="onPrimary_l">#1C1C1C</color>
-    <color name="secondary_l">#70FF00</color>
-    <color name="secondaryVariant_l">#61DD00</color>
+    <color name="secondary_l">#47E200</color>
+    <color name="secondaryVariant_l">#4AEA00</color>
     <color name="onSecondary_l">#1C1C1C</color>
+    <color name="cardBackground_l">#E7E7E7</color>
 
     <!-- Colores de la aplicación en modo oscuro -->
     <color name="background_d">#181818</color>
-    <color name="primary_d">#D49A0C</color>
-    <color name="primaryVariant_d">#F6B81F</color>
+    <color name="primary_d">#DA6C0A</color>
+    <color name="primaryVariant_d">#E88227</color>
     <color name="onPrimary_d">#EFEFEF</color>
-    <color name="secondary_d">#DA6C0A</color>
-    <color name="secondaryVariant_d">#E88227</color>
+    <color name="secondary_d">#D49A0C</color>
+    <color name="secondaryVariant_d">#F6B81F</color>
     <color name="onSecondary_d">#EFEFEF</color>
+    <color name="cardBackground_d">#373737</color>
 </resources>

@@ -1,51 +1,24 @@
 package com.example.tallernotas
 
-import android.content.Intent
 import android.content.SharedPreferences
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.google.android.material.button.MaterialButton
 
-class MainActivity : AppCompatActivity() {
-
+class EstadisticasActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        setTheme(R.style.Theme_TallerNotas)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_estadisticas)
         iniciarComponentes()
     }
 
     private fun iniciarComponentes(){
         configurarTema()
-        val btnRegistro: MaterialButton = findViewById(R.id.btnRegistro)
-        val btnEstadicticas: MaterialButton = findViewById(R.id.btnEstadicticas)
-        val btnInstrucciones: MaterialButton = findViewById(R.id.btnInstrucciones)
-        btnRegistro.setOnClickListener{ btnOnClick(1) }
-        btnEstadicticas.setOnClickListener{ btnOnClick(2) }
-        btnInstrucciones.setOnClickListener{ btnOnClick(3) }
     }
 
-    private fun btnOnClick(btn: Int){
-        val intent: Intent?
-        when (btn){
-            1 -> {
-                intent = Intent(this, RegistroActivity::class.java)
-                startActivity(intent)
-            }
-            2 -> {
-                intent = Intent(this, EstadisticasActivity::class.java)
-                startActivity(intent)
-            }
-            3 -> {
-                intent = Intent(this, InstruccionesActivity::class.java)
-                startActivity(intent)
-            }
-        }
-    }
-
-    fun configurarTema(){
+    private fun configurarTema(){
         val appSettingsPrefs: SharedPreferences = getSharedPreferences("AppSettingPrefs", 0)
         val sharedPrefsEdit: SharedPreferences.Editor = appSettingsPrefs.edit()
         val isNightModeOn: Boolean = appSettingsPrefs.getBoolean("NightMode", false)

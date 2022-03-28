@@ -7,4 +7,20 @@
     <string name="instrucciones">Instrucciones</string>
     <string name="sun">🌞</string>
     <string name="moon">🌚</string>
+    <string name="documento">Documento</string>
+    <string name="consultar">🔎</string>
+    <string name="estudiante">Datos Del Estudiante</string>
+    <string name="notas">Materias 📄</string>
+    <string name="materia1">Python</string>
+    <string name="materia2">Kotlin</string>
+    <string name="materia3">Javascript</string>
+    <string name="materia4">C #</string>
+    <string name="materia5">Java</string>
+    <string name="nombre">Nombre completo</string>
+    <string name="edad">Edad</string>
+    <string name="telefono">Teléfono</string>
+    <string name="direccion">Dirección</string>
+    <string name="nota">Nota</string>
+    <string name="promedio">Calcular promedio</string>
+    <string name="back">back</string>
 </resources>
