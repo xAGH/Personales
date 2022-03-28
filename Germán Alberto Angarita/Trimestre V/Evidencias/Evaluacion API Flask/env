@@ -1,0 +1,9 @@
+APP_HOST=localhost
+APP_PORT=5000
+APP_DEBUG=true
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=taller_evaluativo
+DB_USER=root
+DB_PASSWORD=databasePass
+JWT_KEY=
