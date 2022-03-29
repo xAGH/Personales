@@ -1,0 +1,20 @@
+C:\Users\SENA\source\repos\Vecindad\bin\Debug\Vecindad.exe.config
+C:\Users\SENA\source\repos\Vecindad\bin\Debug\Vecindad.exe
+C:\Users\SENA\source\repos\Vecindad\bin\Debug\Vecindad.pdb
+C:\Users\SENA\source\repos\Vecindad\obj\Debug\Vecindad.csprojAssemblyReference.cache
+C:\Users\SENA\source\repos\Vecindad\obj\Debug\Vecindad.Form1.resources
+C:\Users\SENA\source\repos\Vecindad\obj\Debug\Vecindad.Properties.Resources.resources
+C:\Users\SENA\source\repos\Vecindad\obj\Debug\Vecindad.csproj.GenerateResource.cache
+C:\Users\SENA\source\repos\Vecindad\obj\Debug\Vecindad.csproj.CoreCompileInputs.cache
+C:\Users\SENA\source\repos\Vecindad\obj\Debug\Vecindad.exe
+C:\Users\SENA\source\repos\Vecindad\obj\Debug\Vecindad.pdb
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Vecindad\bin\Debug\Vecindad.exe.config
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Vecindad\bin\Debug\Vecindad.exe
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Vecindad\bin\Debug\Vecindad.pdb
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Vecindad\obj\Debug\Vecindad.csprojAssemblyReference.cache
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Vecindad\obj\Debug\Vecindad.Properties.Resources.resources
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Vecindad\obj\Debug\Vecindad.csproj.GenerateResource.cache
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Vecindad\obj\Debug\Vecindad.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Vecindad\obj\Debug\Vecindad.exe
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Vecindad\obj\Debug\Vecindad.pdb
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Vecindad\obj\Debug\Vecindad.FormPrincipal.resources
