@@ -43,28 +43,28 @@ namespace Vecindad
             this.labelDatos = new System.Windows.Forms.Label();
             this.labelValores = new System.Windows.Forms.Label();
             this.labelCostoFijo = new System.Windows.Forms.Label();
-            this.textBoxCostoFijo = new System.Windows.Forms.TextBox();
             this.labelPisicina = new System.Windows.Forms.Label();
-            this.textBoxPisicna = new System.Windows.Forms.TextBox();
-            this.textBoxSubtotal = new System.Windows.Forms.TextBox();
-            this.textBoxAseo = new System.Windows.Forms.TextBox();
-            this.textBoxZonasSociales = new System.Windows.Forms.TextBox();
-            this.textBoxJuegos = new System.Windows.Forms.TextBox();
-            this.textBoxDescuento = new System.Windows.Forms.TextBox();
             this.labelJuegos = new System.Windows.Forms.Label();
             this.labelZonasSociales = new System.Windows.Forms.Label();
             this.labelAseo = new System.Windows.Forms.Label();
             this.labelSubtotal = new System.Windows.Forms.Label();
             this.labelDescuento = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownNinios = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownAdultos = new System.Windows.Forms.NumericUpDown();
             this.labelTotal = new System.Windows.Forms.Label();
-            this.textBoxTotal = new System.Windows.Forms.TextBox();
             this.buttonRegistrar = new System.Windows.Forms.Button();
             this.buttonVerLista = new System.Windows.Forms.Button();
             this.textBoxNroApto = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.labelValorCostoFijo = new System.Windows.Forms.Label();
+            this.labelValorPiscina = new System.Windows.Forms.Label();
+            this.labelValorJuegos = new System.Windows.Forms.Label();
+            this.labelValorZonasSociales = new System.Windows.Forms.Label();
+            this.labelValorAseo = new System.Windows.Forms.Label();
+            this.labelValorSubtotal = new System.Windows.Forms.Label();
+            this.labelValorDescuento = new System.Windows.Forms.Label();
+            this.labelValorTotal = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNinios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAdultos)).BeginInit();
             this.SuspendLayout();
             // 
             // labelTitulo
@@ -121,9 +121,9 @@ namespace Vecindad
             this.textBoxDuenio.Size = new System.Drawing.Size(207, 33);
             this.textBoxDuenio.TabIndex = 7;
             this.textBoxDuenio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxDuenio.TextChanged += new System.EventHandler(this.textBox_TextChanged_EntradasMinimas);
-            this.textBoxDuenio.Enter += new System.EventHandler(this.textBox_Enter);
-            this.textBoxDuenio.Leave += new System.EventHandler(this.textBox_Leave);
+            this.textBoxDuenio.TextChanged += new System.EventHandler(this.TextBox_TextChanged);
+            this.textBoxDuenio.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxDuenio.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // labelNroAdultos
             // 
@@ -156,8 +156,9 @@ namespace Vecindad
             this.textBoxInquilino.Size = new System.Drawing.Size(207, 33);
             this.textBoxInquilino.TabIndex = 10;
             this.textBoxInquilino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxInquilino.Enter += new System.EventHandler(this.textBox_Enter);
-            this.textBoxInquilino.Leave += new System.EventHandler(this.textBox_Leave);
+            this.textBoxInquilino.TextChanged += new System.EventHandler(this.TextBoxInquilino_TextChanged);
+            this.textBoxInquilino.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxInquilino.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // labelDatos
             // 
@@ -183,107 +184,29 @@ namespace Vecindad
             // 
             this.labelCostoFijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelCostoFijo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCostoFijo.Location = new System.Drawing.Point(243, 119);
+            this.labelCostoFijo.Location = new System.Drawing.Point(248, 359);
             this.labelCostoFijo.Name = "labelCostoFijo";
             this.labelCostoFijo.Size = new System.Drawing.Size(145, 32);
             this.labelCostoFijo.TabIndex = 15;
             this.labelCostoFijo.Text = "Costo fijo";
             this.labelCostoFijo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBoxCostoFijo
-            // 
-            this.textBoxCostoFijo.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.textBoxCostoFijo.Location = new System.Drawing.Point(394, 120);
-            this.textBoxCostoFijo.MaxLength = 8;
-            this.textBoxCostoFijo.Name = "textBoxCostoFijo";
-            this.textBoxCostoFijo.ReadOnly = true;
-            this.textBoxCostoFijo.Size = new System.Drawing.Size(159, 33);
-            this.textBoxCostoFijo.TabIndex = 16;
-            this.textBoxCostoFijo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            (this.textBoxCostoFijo.Text).ToString("C", CultureInfo.CurrentCulture)
-            // 
             // labelPisicina
             // 
             this.labelPisicina.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelPisicina.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPisicina.Location = new System.Drawing.Point(243, 158);
+            this.labelPisicina.Location = new System.Drawing.Point(243, 123);
             this.labelPisicina.Name = "labelPisicina";
             this.labelPisicina.Size = new System.Drawing.Size(145, 32);
             this.labelPisicina.TabIndex = 17;
             this.labelPisicina.Text = "Piscina";
             this.labelPisicina.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBoxPisicna
-            // 
-            this.textBoxPisicna.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.textBoxPisicna.Location = new System.Drawing.Point(394, 159);
-            this.textBoxPisicna.MaxLength = 8;
-            this.textBoxPisicna.Name = "textBoxPisicna";
-            this.textBoxPisicna.ReadOnly = true;
-            this.textBoxPisicna.Size = new System.Drawing.Size(159, 33);
-            this.textBoxPisicna.TabIndex = 18;
-            this.textBoxPisicna.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBoxSubtotal
-            // 
-            this.textBoxSubtotal.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.textBoxSubtotal.Location = new System.Drawing.Point(394, 315);
-            this.textBoxSubtotal.MaxLength = 8;
-            this.textBoxSubtotal.Name = "textBoxSubtotal";
-            this.textBoxSubtotal.ReadOnly = true;
-            this.textBoxSubtotal.Size = new System.Drawing.Size(159, 33);
-            this.textBoxSubtotal.TabIndex = 19;
-            this.textBoxSubtotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBoxAseo
-            // 
-            this.textBoxAseo.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.textBoxAseo.Location = new System.Drawing.Point(394, 276);
-            this.textBoxAseo.MaxLength = 8;
-            this.textBoxAseo.Name = "textBoxAseo";
-            this.textBoxAseo.ReadOnly = true;
-            this.textBoxAseo.Size = new System.Drawing.Size(159, 33);
-            this.textBoxAseo.TabIndex = 20;
-            this.textBoxAseo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBoxZonasSociales
-            // 
-            this.textBoxZonasSociales.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.textBoxZonasSociales.Location = new System.Drawing.Point(394, 237);
-            this.textBoxZonasSociales.MaxLength = 8;
-            this.textBoxZonasSociales.Name = "textBoxZonasSociales";
-            this.textBoxZonasSociales.ReadOnly = true;
-            this.textBoxZonasSociales.Size = new System.Drawing.Size(159, 33);
-            this.textBoxZonasSociales.TabIndex = 21;
-            this.textBoxZonasSociales.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBoxJuegos
-            // 
-            this.textBoxJuegos.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.textBoxJuegos.Location = new System.Drawing.Point(394, 198);
-            this.textBoxJuegos.MaxLength = 8;
-            this.textBoxJuegos.Name = "textBoxJuegos";
-            this.textBoxJuegos.ReadOnly = true;
-            this.textBoxJuegos.Size = new System.Drawing.Size(159, 33);
-            this.textBoxJuegos.TabIndex = 22;
-            this.textBoxJuegos.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBoxDescuento
-            // 
-            this.textBoxDescuento.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.textBoxDescuento.Location = new System.Drawing.Point(394, 354);
-            this.textBoxDescuento.MaxLength = 8;
-            this.textBoxDescuento.Name = "textBoxDescuento";
-            this.textBoxDescuento.ReadOnly = true;
-            this.textBoxDescuento.Size = new System.Drawing.Size(159, 33);
-            this.textBoxDescuento.TabIndex = 23;
-            this.textBoxDescuento.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // labelJuegos
             // 
             this.labelJuegos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelJuegos.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelJuegos.Location = new System.Drawing.Point(243, 197);
+            this.labelJuegos.Location = new System.Drawing.Point(243, 162);
             this.labelJuegos.Name = "labelJuegos";
             this.labelJuegos.Size = new System.Drawing.Size(145, 32);
             this.labelJuegos.TabIndex = 24;
@@ -294,7 +217,7 @@ namespace Vecindad
             // 
             this.labelZonasSociales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelZonasSociales.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelZonasSociales.Location = new System.Drawing.Point(238, 236);
+            this.labelZonasSociales.Location = new System.Drawing.Point(238, 201);
             this.labelZonasSociales.Name = "labelZonasSociales";
             this.labelZonasSociales.Size = new System.Drawing.Size(150, 32);
             this.labelZonasSociales.TabIndex = 25;
@@ -305,7 +228,7 @@ namespace Vecindad
             // 
             this.labelAseo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelAseo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAseo.Location = new System.Drawing.Point(243, 275);
+            this.labelAseo.Location = new System.Drawing.Point(243, 240);
             this.labelAseo.Name = "labelAseo";
             this.labelAseo.Size = new System.Drawing.Size(145, 32);
             this.labelAseo.TabIndex = 26;
@@ -316,7 +239,7 @@ namespace Vecindad
             // 
             this.labelSubtotal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelSubtotal.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSubtotal.Location = new System.Drawing.Point(243, 314);
+            this.labelSubtotal.Location = new System.Drawing.Point(243, 283);
             this.labelSubtotal.Name = "labelSubtotal";
             this.labelSubtotal.Size = new System.Drawing.Size(145, 32);
             this.labelSubtotal.TabIndex = 27;
@@ -327,66 +250,57 @@ namespace Vecindad
             // 
             this.labelDescuento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelDescuento.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDescuento.Location = new System.Drawing.Point(248, 353);
+            this.labelDescuento.Location = new System.Drawing.Point(248, 320);
             this.labelDescuento.Name = "labelDescuento";
             this.labelDescuento.Size = new System.Drawing.Size(140, 32);
             this.labelDescuento.TabIndex = 28;
             this.labelDescuento.Text = "Descuento";
             this.labelDescuento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // numericUpDown1
+            // numericUpDownNinios
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.numericUpDown1.Location = new System.Drawing.Point(12, 426);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.numericUpDownNinios.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.numericUpDownNinios.Location = new System.Drawing.Point(12, 426);
+            this.numericUpDownNinios.Maximum = new decimal(new int[] {
             9,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(207, 33);
-            this.numericUpDown1.TabIndex = 29;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown1.Enter += new System.EventHandler(this.textBox_Enter);
-            this.numericUpDown1.Leave += new System.EventHandler(this.textBox_Leave);
+            this.numericUpDownNinios.Name = "numericUpDownNinios";
+            this.numericUpDownNinios.Size = new System.Drawing.Size(207, 33);
+            this.numericUpDownNinios.TabIndex = 29;
+            this.numericUpDownNinios.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDownNinios.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
+            this.numericUpDownNinios.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.numericUpDownNinios.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
-            // numericUpDown2
+            // numericUpDownAdultos
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.numericUpDown2.Location = new System.Drawing.Point(12, 355);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.numericUpDownAdultos.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.numericUpDownAdultos.Location = new System.Drawing.Point(12, 355);
+            this.numericUpDownAdultos.Maximum = new decimal(new int[] {
             9,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(207, 33);
-            this.numericUpDown2.TabIndex = 30;
-            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown2.Enter += new System.EventHandler(this.textBox_Enter);
-            this.numericUpDown2.Leave += new System.EventHandler(this.textBox_Leave);
+            this.numericUpDownAdultos.Name = "numericUpDownAdultos";
+            this.numericUpDownAdultos.Size = new System.Drawing.Size(207, 33);
+            this.numericUpDownAdultos.TabIndex = 30;
+            this.numericUpDownAdultos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDownAdultos.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
+            this.numericUpDownAdultos.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.numericUpDownAdultos.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // labelTotal
             // 
             this.labelTotal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelTotal.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotal.Location = new System.Drawing.Point(248, 392);
+            this.labelTotal.Location = new System.Drawing.Point(248, 391);
             this.labelTotal.Name = "labelTotal";
             this.labelTotal.Size = new System.Drawing.Size(140, 32);
             this.labelTotal.TabIndex = 31;
             this.labelTotal.Text = "Total";
             this.labelTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBoxTotal
-            // 
-            this.textBoxTotal.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.textBoxTotal.Location = new System.Drawing.Point(394, 393);
-            this.textBoxTotal.MaxLength = 8;
-            this.textBoxTotal.Name = "textBoxTotal";
-            this.textBoxTotal.ReadOnly = true;
-            this.textBoxTotal.Size = new System.Drawing.Size(159, 33);
-            this.textBoxTotal.TabIndex = 32;
-            this.textBoxTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // buttonRegistrar
             // 
@@ -430,35 +344,115 @@ namespace Vecindad
             this.textBoxNroApto.Size = new System.Drawing.Size(207, 33);
             this.textBoxNroApto.TabIndex = 3;
             this.textBoxNroApto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxNroApto.TextChanged += new System.EventHandler(this.textBox_TextChanged_EntradasMinimas);
-            this.textBoxNroApto.Enter += new System.EventHandler(this.textBox_Enter);
-            this.textBoxNroApto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress_LimitarNumeros);
-            this.textBoxNroApto.Leave += new System.EventHandler(this.textBox_Leave);
+            this.textBoxNroApto.TextChanged += new System.EventHandler(this.TextBox_TextChanged);
+            this.textBoxNroApto.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxNroApto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_KeyPress_LimitarNumeros);
+            this.textBoxNroApto.Leave += new System.EventHandler(this.TextBox_Leave);
+            // 
+            // labelValorCostoFijo
+            // 
+            this.labelValorCostoFijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelValorCostoFijo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValorCostoFijo.Location = new System.Drawing.Point(394, 359);
+            this.labelValorCostoFijo.Name = "labelValorCostoFijo";
+            this.labelValorCostoFijo.Size = new System.Drawing.Size(164, 32);
+            this.labelValorCostoFijo.TabIndex = 35;
+            this.labelValorCostoFijo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // labelValorPiscina
+            // 
+            this.labelValorPiscina.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelValorPiscina.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValorPiscina.Location = new System.Drawing.Point(389, 123);
+            this.labelValorPiscina.Name = "labelValorPiscina";
+            this.labelValorPiscina.Size = new System.Drawing.Size(164, 32);
+            this.labelValorPiscina.TabIndex = 36;
+            this.labelValorPiscina.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // labelValorJuegos
+            // 
+            this.labelValorJuegos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelValorJuegos.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValorJuegos.Location = new System.Drawing.Point(389, 162);
+            this.labelValorJuegos.Name = "labelValorJuegos";
+            this.labelValorJuegos.Size = new System.Drawing.Size(164, 32);
+            this.labelValorJuegos.TabIndex = 37;
+            this.labelValorJuegos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // labelValorZonasSociales
+            // 
+            this.labelValorZonasSociales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelValorZonasSociales.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValorZonasSociales.Location = new System.Drawing.Point(389, 201);
+            this.labelValorZonasSociales.Name = "labelValorZonasSociales";
+            this.labelValorZonasSociales.Size = new System.Drawing.Size(164, 32);
+            this.labelValorZonasSociales.TabIndex = 38;
+            this.labelValorZonasSociales.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // labelValorAseo
+            // 
+            this.labelValorAseo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelValorAseo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValorAseo.Location = new System.Drawing.Point(389, 240);
+            this.labelValorAseo.Name = "labelValorAseo";
+            this.labelValorAseo.Size = new System.Drawing.Size(164, 32);
+            this.labelValorAseo.TabIndex = 39;
+            this.labelValorAseo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // labelValorSubtotal
+            // 
+            this.labelValorSubtotal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelValorSubtotal.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValorSubtotal.Location = new System.Drawing.Point(389, 283);
+            this.labelValorSubtotal.Name = "labelValorSubtotal";
+            this.labelValorSubtotal.Size = new System.Drawing.Size(164, 32);
+            this.labelValorSubtotal.TabIndex = 40;
+            this.labelValorSubtotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // labelValorDescuento
+            // 
+            this.labelValorDescuento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelValorDescuento.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValorDescuento.Location = new System.Drawing.Point(394, 320);
+            this.labelValorDescuento.Name = "labelValorDescuento";
+            this.labelValorDescuento.Size = new System.Drawing.Size(164, 32);
+            this.labelValorDescuento.TabIndex = 41;
+            this.labelValorDescuento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // labelValorTotal
+            // 
+            this.labelValorTotal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelValorTotal.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValorTotal.Location = new System.Drawing.Point(394, 391);
+            this.labelValorTotal.Name = "labelValorTotal";
+            this.labelValorTotal.Size = new System.Drawing.Size(164, 32);
+            this.labelValorTotal.TabIndex = 42;
+            this.labelValorTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(578, 501);
+            this.Controls.Add(this.labelValorTotal);
+            this.Controls.Add(this.labelValorDescuento);
+            this.Controls.Add(this.labelValorSubtotal);
+            this.Controls.Add(this.labelValorAseo);
+            this.Controls.Add(this.labelValorZonasSociales);
+            this.Controls.Add(this.labelValorJuegos);
+            this.Controls.Add(this.labelValorPiscina);
+            this.Controls.Add(this.labelValorCostoFijo);
             this.Controls.Add(this.buttonVerLista);
             this.Controls.Add(this.buttonRegistrar);
-            this.Controls.Add(this.textBoxTotal);
             this.Controls.Add(this.labelTotal);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numericUpDownAdultos);
+            this.Controls.Add(this.numericUpDownNinios);
             this.Controls.Add(this.labelDescuento);
             this.Controls.Add(this.labelSubtotal);
             this.Controls.Add(this.labelAseo);
             this.Controls.Add(this.labelZonasSociales);
             this.Controls.Add(this.labelJuegos);
-            this.Controls.Add(this.textBoxDescuento);
-            this.Controls.Add(this.textBoxJuegos);
-            this.Controls.Add(this.textBoxZonasSociales);
-            this.Controls.Add(this.textBoxAseo);
-            this.Controls.Add(this.textBoxSubtotal);
-            this.Controls.Add(this.textBoxPisicna);
             this.Controls.Add(this.labelPisicina);
-            this.Controls.Add(this.textBoxCostoFijo);
             this.Controls.Add(this.labelCostoFijo);
             this.Controls.Add(this.labelValores);
             this.Controls.Add(this.labelDatos);
@@ -477,8 +471,8 @@ namespace Vecindad
             this.Name = "FormPrincipal";
             this.ShowInTaskbar = false;
             this.Text = "Condominio la 8 vecindad";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNinios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAdultos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -497,26 +491,26 @@ namespace Vecindad
         private System.Windows.Forms.Label labelDatos;
         private System.Windows.Forms.Label labelValores;
         private System.Windows.Forms.Label labelCostoFijo;
-        private System.Windows.Forms.TextBox textBoxCostoFijo;
         private System.Windows.Forms.Label labelPisicina;
-        private System.Windows.Forms.TextBox textBoxPisicna;
-        private System.Windows.Forms.TextBox textBoxSubtotal;
-        private System.Windows.Forms.TextBox textBoxAseo;
-        private System.Windows.Forms.TextBox textBoxZonasSociales;
-        private System.Windows.Forms.TextBox textBoxJuegos;
-        private System.Windows.Forms.TextBox textBoxDescuento;
         private System.Windows.Forms.Label labelJuegos;
         private System.Windows.Forms.Label labelZonasSociales;
         private System.Windows.Forms.Label labelAseo;
         private System.Windows.Forms.Label labelSubtotal;
         private System.Windows.Forms.Label labelDescuento;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numericUpDownNinios;
+        private System.Windows.Forms.NumericUpDown numericUpDownAdultos;
         private System.Windows.Forms.Label labelTotal;
-        private System.Windows.Forms.TextBox textBoxTotal;
         private System.Windows.Forms.Button buttonRegistrar;
         private System.Windows.Forms.Button buttonVerLista;
         private System.Windows.Forms.TextBox textBoxNroApto;
+        private System.Windows.Forms.Label labelValorCostoFijo;
+        private System.Windows.Forms.Label labelValorPiscina;
+        private System.Windows.Forms.Label labelValorJuegos;
+        private System.Windows.Forms.Label labelValorZonasSociales;
+        private System.Windows.Forms.Label labelValorAseo;
+        private System.Windows.Forms.Label labelValorSubtotal;
+        private System.Windows.Forms.Label labelValorDescuento;
+        private System.Windows.Forms.Label labelValorTotal;
     }
 }
 
