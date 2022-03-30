@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <ImageButton
-            android:id="@+id/btnBack"
+            android:id="@+id/btnVolver"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/arrow_back"
@@ -71,6 +71,7 @@
                     android:autofillHints="number"
                     android:hint="@string/documento"
                     android:inputType="number"
+                    android:maxLength="20"
                     android:textSize="18sp" />
 
                 <com.google.android.material.button.MaterialButton
@@ -88,43 +89,45 @@
 
             <EditText
                 android:id="@+id/inputNombre"
-                android:layout_marginHorizontal="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
                 android:autofillHints="name"
                 android:hint="@string/nombre"
-                android:inputType="textPersonName"
+                android:inputType="textCapSentences"
                 android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/inputEdad"
-                android:layout_marginHorizontal="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
                 android:autofillHints="number"
                 android:hint="@string/edad"
                 android:inputType="number"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:maxLength="2"/>
 
             <EditText
                 android:id="@+id/inputTelefono"
-                android:layout_marginHorizontal="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
                 android:autofillHints="phone"
                 android:hint="@string/telefono"
                 android:inputType="phone"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:maxLength="15"/>
 
             <EditText
                 android:id="@+id/inputDireccion"
-                android:layout_marginHorizontal="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:autofillHints=""
                 android:hint="@string/direccion"
                 android:inputType="text"
-                android:textSize="18sp"
-                android:autofillHints="" />
+                android:textSize="18sp" />
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -185,13 +188,11 @@
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
-
                 <EditText
                     android:id="@+id/inputNota1"
                     style="@style/EditTextNota"
                     android:hint="@string/nota"
-                    android:inputType="number"
-                    android:autofillHints=""/>
+                    android:importantForAutofill="no" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_columnWeight="1"
@@ -219,8 +220,7 @@
                     android:id="@+id/inputNota2"
                     style="@style/EditTextNota"
                     android:hint="@string/nota"
-                    android:inputType="number"
-                    android:autofillHints=""/>
+                    android:importantForAutofill="no" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_columnWeight="1"
@@ -247,8 +247,7 @@
                     android:id="@+id/inputNota3"
                     style="@style/EditTextNota"
                     android:hint="@string/nota"
-                    android:inputType="number"
-                    android:autofillHints=""/>
+                    android:importantForAutofill="no" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_columnWeight="1"
@@ -275,8 +274,7 @@
                     android:id="@+id/inputNota4"
                     style="@style/EditTextNota"
                     android:hint="@string/nota"
-                    android:inputType="number"
-                    android:autofillHints=""/>
+                    android:importantForAutofill="no" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_columnWeight="1"
@@ -303,8 +301,7 @@
                     android:id="@+id/inputNota5"
                     style="@style/EditTextNota"
                     android:hint="@string/nota"
-                    android:inputType="number"
-                    android:autofillHints=""/>
+                    android:importantForAutofill="no" />
 
             </GridLayout>
 
@@ -316,8 +313,9 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnPromedio"
         style="@style/MenuButtonStyle"
+        android:layout_marginTop="40dp"
+        android:enabled="false"
         android:text="@string/promedio"
-        android:textSize="22sp"
-        android:layout_marginTop="40dp"/>
+        android:textSize="22sp" />
 
 </LinearLayout>

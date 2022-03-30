@@ -1,5 +1,6 @@
 package com.example.tallernotas
 
+import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -38,12 +39,20 @@ class EstadisticasActivity : AppCompatActivity() {
                 sharedPrefsEdit.putBoolean("NightMode", false)
                 sharedPrefsEdit.apply()
                 theme.text = getText(R.string.moon)
+                restartApp()
             } else {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
                 sharedPrefsEdit.putBoolean("NightMode", true)
                 sharedPrefsEdit.apply()
                 theme.text = getText(R.string.sun)
+                restartApp()
             }
         })
+    }
+
+    private fun restartApp() {
+        val intent: Intent = Intent(this, EstadisticasActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }
