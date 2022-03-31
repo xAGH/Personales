@@ -14,12 +14,13 @@ class DBUtils {
         const val campoNota4: String = "nota4"
         const val campoNota5: String = "nota5"
         const val campoPromedio: String = "promedio"
+        const val campoRendimiento: String = "rendimiento"
 
         fun createTable(): String =
             "CREATE TABLE $tabla("+
-                    "$campoDocumento INTEGER," +
+                    "$campoDocumento TEXT PRIMARY KEY," +
                     "$campoNombre TEXT," +
-                    "$campoEdad INTEGER," +
+                    "$campoEdad TEXT," +
                     "$campoTelefono TEXT," +
                     "$campoDireccion TEXT," +
                     "$campoNota1 REAL," +
@@ -27,7 +28,8 @@ class DBUtils {
                     "$campoNota3 REAL," +
                     "$campoNota4 REAL," +
                     "$campoNota5 REAL," +
-                    "$campoPromedio REAL" +
+                    "$campoPromedio REAL," +
+                    "$campoRendimiento TEXT" +
                     ")"
 
         fun dropTable(): String = "DROP TABLE IF EXISTS $tabla"

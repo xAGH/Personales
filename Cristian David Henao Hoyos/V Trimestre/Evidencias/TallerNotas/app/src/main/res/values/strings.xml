@@ -21,6 +21,15 @@
     <string name="telefono">Teléfono</string>
     <string name="direccion">Dirección</string>
     <string name="nota">Nota</string>
-    <string name="promedio">Calcular promedio</string>
+    <string name="registrarDatos">Registrar Datos</string>
+    <string name="actualizarDatos">Actualizar Datos</string>
     <string name="back">back</string>
+    <string name="materia1doted">Python:</string>
+    <string name="nombredoted">Nombre:</string>
+    <string name="materia2doted">Kotlin:</string>
+    <string name="materia3doted">Javascript:</string>
+    <string name="materia4doted">C#:</string>
+    <string name="materia5doted">Java:</string>
+    <string name="promediodoted">Promedio:</string>
+    <string name="resultadodoted">Resultado:</string>
 </resources>

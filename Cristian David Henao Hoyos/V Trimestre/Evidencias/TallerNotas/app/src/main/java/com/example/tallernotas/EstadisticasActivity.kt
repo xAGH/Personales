@@ -51,7 +51,7 @@ class EstadisticasActivity : AppCompatActivity() {
     }
 
     private fun restartApp() {
-        val intent: Intent = Intent(this, EstadisticasActivity::class.java)
+        val intent: Intent = Intent(this, this::class.java)
         startActivity(intent)
         finish()
     }

@@ -315,7 +315,7 @@
         style="@style/MenuButtonStyle"
         android:layout_marginTop="40dp"
         android:enabled="false"
-        android:text="@string/promedio"
+        android:text="@string/registrarDatos"
         android:textSize="22sp" />
 
 </LinearLayout>

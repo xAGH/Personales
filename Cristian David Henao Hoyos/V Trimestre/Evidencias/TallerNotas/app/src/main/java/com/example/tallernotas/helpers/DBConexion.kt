@@ -18,6 +18,6 @@ class DBConexion(
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         db!!.execSQL(DBUtils.dropTable())
-        db!!.execSQL(DBUtils.createTable())
+        db.execSQL(DBUtils.createTable())
     }
 }
