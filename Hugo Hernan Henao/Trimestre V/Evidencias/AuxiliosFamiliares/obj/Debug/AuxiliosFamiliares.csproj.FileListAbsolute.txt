@@ -1,0 +1,22 @@
+C:\Users\SENA\source\repos\AuxiliosFamiliares\bin\Debug\AuxiliosFamiliares.exe.config
+C:\Users\SENA\source\repos\AuxiliosFamiliares\bin\Debug\AuxiliosFamiliares.exe
+C:\Users\SENA\source\repos\AuxiliosFamiliares\bin\Debug\AuxiliosFamiliares.pdb
+C:\Users\SENA\source\repos\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.csprojAssemblyReference.cache
+C:\Users\SENA\source\repos\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.Properties.Resources.resources
+C:\Users\SENA\source\repos\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.csproj.GenerateResource.cache
+C:\Users\SENA\source\repos\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.csproj.CoreCompileInputs.cache
+C:\Users\SENA\source\repos\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.exe
+C:\Users\SENA\source\repos\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.pdb
+C:\Users\SENA\source\repos\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.FormLogin.resources
+C:\Users\SENA\source\repos\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.FormLoading.resources
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\AuxiliosFamiliares\bin\Debug\AuxiliosFamiliares.exe.config
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\AuxiliosFamiliares\bin\Debug\AuxiliosFamiliares.exe
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\AuxiliosFamiliares\bin\Debug\AuxiliosFamiliares.pdb
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.csprojAssemblyReference.cache
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.Properties.Resources.resources
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.csproj.GenerateResource.cache
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.exe
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.pdb
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.LoginWindow.resources
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.SplashWindow.resources
