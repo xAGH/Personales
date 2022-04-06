@@ -84,6 +84,7 @@ namespace AuxiliosFamiliares
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(349, 29);
             this.textBoxName.TabIndex = 3;
+            this.textBoxName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Enter_KeyPress);
             // 
             // textBoxPassword
             // 
@@ -93,11 +94,13 @@ namespace AuxiliosFamiliares
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(258, 29);
             this.textBoxPassword.TabIndex = 4;
+            this.textBoxPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Enter_KeyPress);
             // 
             // buttonExit
             // 
             this.buttonExit.AutoSize = true;
             this.buttonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonExit.FlatAppearance.BorderSize = 0;
             this.buttonExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.buttonExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -107,7 +110,7 @@ namespace AuxiliosFamiliares
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(76, 33);
             this.buttonExit.TabIndex = 6;
-            this.buttonExit.Text = "Salir";
+            this.buttonExit.Text = "&Salir";
             this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.ButtonExit_Click);
             // 
@@ -115,6 +118,7 @@ namespace AuxiliosFamiliares
             // 
             this.buttonLogin.AutoSize = true;
             this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLogin.FlatAppearance.BorderSize = 0;
             this.buttonLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -124,7 +128,7 @@ namespace AuxiliosFamiliares
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(91, 33);
             this.buttonLogin.TabIndex = 7;
-            this.buttonLogin.Text = "Continuar";
+            this.buttonLogin.Text = "&Continuar";
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.ButtonLogin_Click);
             // 
@@ -140,7 +144,7 @@ namespace AuxiliosFamiliares
             this.buttonViewPass.Name = "buttonViewPass";
             this.buttonViewPass.Size = new System.Drawing.Size(85, 29);
             this.buttonViewPass.TabIndex = 8;
-            this.buttonViewPass.Text = "Ver";
+            this.buttonViewPass.Text = "&Ver";
             this.buttonViewPass.UseVisualStyleBackColor = false;
             this.buttonViewPass.Click += new System.EventHandler(this.ButtonViewPass_Click);
             // 

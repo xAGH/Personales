@@ -20,3 +20,4 @@ C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidenc
 C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.pdb
 C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.LoginWindow.resources
 C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.SplashWindow.resources
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\AuxiliosFamiliares\obj\Debug\AuxiliosFamiliares.QuotationWindow.resources
