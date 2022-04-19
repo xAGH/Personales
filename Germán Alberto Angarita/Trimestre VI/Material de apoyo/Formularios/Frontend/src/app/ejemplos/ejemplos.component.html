@@ -1,0 +1,52 @@
+---------------------------------------------
+<br>
+<h3>(1)Servicio que imprime los digitos(sin usar observables):</h3>
+
+<button type="button" class="btn btn-primary" (click)="mostrarDigitos()">Digitos</button>
+<br>
+---------------------------------------------
+<br>
+<h3>(2)Servicio que imprime los digitos usando observables y sus metodos next (), error(), complete():</h3>
+<button type="button" class="btn btn-primary" (click)="desuscribirse()">Desuscribirse</button>
+<br>
+---------------------------------------------
+<h3>Llamadas http:</h3>
+<h3>(3)Descargar todos los productos con método get:</h3>
+<button type="button" class="btn btn-primary" (click)="pedirProductos()">Descargar Productos</button>
+<div *ngFor="let producto of productos">
+    <h4>producto: {{producto.nombre}} precio: {{producto.precio}}</h4>
+</div>
+
+<h3>(4)Descarga de un producto con método get por id:</h3>
+<button type="button" class="btn btn-primary" (click)="pedirProductosPorId()">Descargar producto por id</button>
+<div *ngIf="productoPorId">
+    <h4>producto: {{productoPorId.nombre}} precio: {{productoPorId.precio}}</h4>
+</div>
+
+<h3>(5)Crear producto:</h3>
+<button type="button" class="btn btn-primary" (click)="crearProducto()">Crear Producto</button>
+<div>
+    <h4>{{estadoCrearProducto}}</h4>
+</div>
+<br>
+---------------------------------------------
+<h3>(6)Envío de formularios:</h3>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email</label>
+      <input type="email" class="form-control" formControlName="email" aria-describedby="emailHelp">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" formControlName="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button (click)="mostrarMensaje()">Mensaje</button>
