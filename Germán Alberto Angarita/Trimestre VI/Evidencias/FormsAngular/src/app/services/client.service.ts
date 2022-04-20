@@ -8,8 +8,12 @@ export class ClientService {
 
   constructor( private http: HttpClient ) {}
 
-  sendFormToJson(url: string, data: any){
+  post(url: string, data: any){
     return this.http.post(url, data)  
+  }
+
+  get(url: string){
+    return this.http.get(url)
   }
   
 }
