@@ -32,4 +32,8 @@
     <string name="materia5doted">Java:</string>
     <string name="promediodoted">Promedio:</string>
     <string name="resultadodoted">Resultado:</string>
+    <string name="procesados">Estudiantes procesados:</string>
+    <string name="ganan">Ganan:</string>
+    <string name="pierden">Pierden:</string>
+    <string name="recuperan">Recuperan:</string>
 </resources>
