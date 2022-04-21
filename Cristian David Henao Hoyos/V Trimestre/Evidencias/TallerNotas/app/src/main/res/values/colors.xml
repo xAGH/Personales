@@ -19,4 +19,9 @@
     <color name="secondaryVariant_d">#F6B81F</color>
     <color name="onSecondary_d">#EFEFEF</color>
     <color name="cardBackground_d">#373737</color>
+
+    <color name="verde">#4AEA00</color>
+    <color name="azul">#1BA9C5</color>
+    <color name="amarillo">#C6C635</color>
+    <color name="rojo">#E5531C</color>
 </resources>

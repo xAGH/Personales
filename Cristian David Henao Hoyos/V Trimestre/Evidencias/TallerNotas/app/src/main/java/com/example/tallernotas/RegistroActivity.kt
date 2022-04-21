@@ -60,24 +60,24 @@ class RegistroActivity : AppCompatActivity() {
     private fun iniciarComponentes(){
         conn = DBConexion(applicationContext, "estudiantes", null, 1)
         inicializarVistas()
-        verificarPersistencia()
         anadirEventos()
         configurarTema()
+        verificarPersistencia()
     }
 
     private fun verificarPersistencia() {
         val data: Bundle? = this.intent.extras
         if (data != null){
-            inputDocumento!!.setText(data.getString("documento"))
-            inputNombre!!.setText(data.getString("nombre"))
-            inputEdad!!.setText(data.getString("edad"))
-            inputTelefono!!.setText(data.getString("telefono"))
-            inputDireccion!!.setText(data.getString("direccion"))
-            inputNota1!!.setText(data.getString("nota1"))
-            inputNota2!!.setText(data.getString("nota2"))
-            inputNota3!!.setText(data.getString("nota3"))
-            inputNota4!!.setText(data.getString("nota4"))
-            inputNota5!!.setText(data.getString("nota5"))
+            inputDocumento?.setText(data.getString("documento")) ?: ""
+            inputNombre?.setText(data.getString("nombre")) ?: ""
+            inputEdad?.setText(data.getString("edad")) ?: ""
+            inputTelefono?.setText(data.getString("telefono")) ?: ""
+            inputDireccion?.setText(data.getString("direccion")) ?: ""
+            inputNota1?.setText(data.getString("nota1")) ?: ""
+            inputNota2?.setText(data.getString("nota2")) ?: ""
+            inputNota3?.setText(data.getString("nota3")) ?: ""
+            inputNota4?.setText(data.getString("nota4")) ?: ""
+            inputNota5?.setText(data.getString("nota5")) ?: ""
             habilitarBotonRegistro()
         }
     }
@@ -287,7 +287,7 @@ class RegistroActivity : AppCompatActivity() {
     private fun restartApp() {
         val intent = Intent(this, this::class.java)
         val data: Bundle = Bundle()
-        data.putString("documento", inputDocumento?.text.toString())
+        data.putString("documento", inputDocumento?.text.toString() ?: "")
         data.putString("nombre", inputNombre?.text.toString())
         data.putString("edad", inputEdad?.text.toString())
         data.putString("telefono", inputTelefono?.text.toString())
@@ -298,7 +298,7 @@ class RegistroActivity : AppCompatActivity() {
         data.putString("nota4", inputNota4?.text.toString())
         data.putString("nota5", inputNota5?.text.toString())
         intent.putExtras(data)
-        startActivity(intent)
         finish()
+        startActivity(intent)
     }
 }
