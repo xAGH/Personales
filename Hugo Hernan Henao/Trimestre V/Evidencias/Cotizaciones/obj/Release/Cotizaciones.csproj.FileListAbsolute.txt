@@ -1,0 +1,10 @@
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Cotizaciones\bin\Release\Cotizaciones.exe.config
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Cotizaciones\bin\Release\Cotizaciones.exe
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Cotizaciones\bin\Release\Cotizaciones.pdb
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Cotizaciones\obj\Release\Cotizaciones.csprojAssemblyReference.cache
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Cotizaciones\obj\Release\Cotizaciones.CotizacionesForm.resources
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Cotizaciones\obj\Release\Cotizaciones.Properties.Resources.resources
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Cotizaciones\obj\Release\Cotizaciones.csproj.GenerateResource.cache
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Cotizaciones\obj\Release\Cotizaciones.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Cotizaciones\obj\Release\Cotizaciones.exe
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre V\Evidencias\Cotizaciones\obj\Release\Cotizaciones.pdb
