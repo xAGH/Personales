@@ -55,4 +55,9 @@
         <item name="android:textSize">17sp</item>
         <item name="android:layout_marginBottom">5dp</item>
     </style>
+
+    <style name="TextEstadisticas">
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:textSize">22sp</item>
+    </style>
 </resources>
