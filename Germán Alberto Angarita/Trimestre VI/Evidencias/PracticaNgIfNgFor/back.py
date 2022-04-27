@@ -1,26 +1,38 @@
 from flask import Flask, jsonify, request, make_response
+from flask_cors import CORS
 app = Flask(__name__)
+
+CORS(app, resources={
+               r"/*": {
+                   "origins": ["http://localhost:4200", "*"]
+               }
+            }, supports_credentials=True)
 
 products = [
     {
-        "Id": 1,
-        "Product": "Tv",
-        "Price": 1000000
+        "id": 1,
+        "product": "Tv",
+        "price": 1000000
     },
     {
-        "Id": 2,
-        "Product": "Smarthphone",
-        "Price": 800000
+        "id": 2,
+        "product": "Smarthphone",
+        "price": 800000
     },
     {
-        "Id": 3,
-        "Product": "PS4",
-        "Price": 900000
+        "id": 3,
+        "product": "PS4",
+        "price": 900000
     },
     {
-        "Id": 4,
-        "Product": "Radio",
-        "Price": 100000
+        "id": 4,
+        "product": "Radio",
+        "price": 100000
+    },
+    {
+        "id": 5,
+        "product": "PC",
+        "price": 400000
     },
 ]
 
