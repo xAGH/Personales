@@ -1,0 +1,34 @@
+<div class="flex justify-center items-center flex-col text-5xl gap-y-20">
+  <button (click)="viewTable=!viewTable" class="bg-{{viewTable ? 'red' : 'blue'}}-400 p-5">
+    {{ viewTable ? 'Ocultar tabla' : 'Ver tabla' }}
+  </button>
+
+  <table *ngIf="viewTable" class="table-auto border-collapse border border-slate-400">
+    <thead>
+      <tr>
+        <th class="border border-slate-300">
+          ID
+        </th>
+        <th class="border border-slate-300">
+          PRODUCT
+        </th>
+        <th class="border border-slate-300">
+          PRICE
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of (data$ | async)">
+        <td class="border border-slate-300 text-center p-10">
+          {{product.id}}
+        </td>
+        <td class="border border-slate-300 text-center p-10">
+          {{product.product}}
+        </td>
+        <td class="border border-slate-300 text-center p-10">
+          {{product.price}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

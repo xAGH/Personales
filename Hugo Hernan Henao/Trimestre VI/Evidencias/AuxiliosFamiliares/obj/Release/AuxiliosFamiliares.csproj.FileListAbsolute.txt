@@ -1,0 +1,12 @@
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre VI\Evidencias\AuxiliosFamiliares\bin\Release\AuxiliosFamiliares.exe.config
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre VI\Evidencias\AuxiliosFamiliares\bin\Release\AuxiliosFamiliares.exe
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre VI\Evidencias\AuxiliosFamiliares\bin\Release\AuxiliosFamiliares.pdb
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre VI\Evidencias\AuxiliosFamiliares\obj\Release\AuxiliosFamiliares.csprojAssemblyReference.cache
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre VI\Evidencias\AuxiliosFamiliares\obj\Release\AuxiliosFamiliares.QuotationWindow.resources
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre VI\Evidencias\AuxiliosFamiliares\obj\Release\AuxiliosFamiliares.SplashWindow.resources
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre VI\Evidencias\AuxiliosFamiliares\obj\Release\AuxiliosFamiliares.LoginWindow.resources
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre VI\Evidencias\AuxiliosFamiliares\obj\Release\AuxiliosFamiliares.Properties.Resources.resources
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre VI\Evidencias\AuxiliosFamiliares\obj\Release\AuxiliosFamiliares.csproj.GenerateResource.cache
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre VI\Evidencias\AuxiliosFamiliares\obj\Release\AuxiliosFamiliares.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre VI\Evidencias\AuxiliosFamiliares\obj\Release\AuxiliosFamiliares.exe
+C:\Users\SENA\Documents\Alejo 2236347\SENA\Hugo Hernan Henao\Trimestre VI\Evidencias\AuxiliosFamiliares\obj\Release\AuxiliosFamiliares.pdb
